@@ -5,3 +5,7 @@ Los 500 PNG y 500 GIF de `assets/media/` son diseños originales creados para es
 Los diseños se inspiran en géneros y arquetipos generales del cine, las series, la animación, los videojuegos, la fantasía y la ciencia ficción. No son productos oficiales y no incluyen personajes, fotogramas, carteles ni logotipos de franquicias de terceros.
 
 Los títulos citados en el Top 300 se incluyen con finalidad informativa y crítica; no se incorporan sus portadas ni material promocional.
+
+Contenido web externo
+
+Las imágenes de Wikipedia/Wikimedia y los resultados de GIPHY/Tenor no forman parte del pack multimedia original ni se redistribuyen en este ZIP. La aplicación los consulta o enlaza cuando el usuario abre una ficha con conexión. Cada recurso externo conserva su propia autoría, licencia y condiciones de uso.

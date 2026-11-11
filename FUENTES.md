@@ -81,3 +81,14 @@ Los 500 PNG y 500 GIF son originales. Se inspiran en géneros y arquetipos gener
 ## Top 300
 
 Selección editorial subjetiva construida para descubrir y debatir. Se han contrastado listas de referencia general, pero FrikiMadrid no copia puntuaciones ni rankings externos.
+
+## Imágenes y GIFs externos del Top 300
+
+- Wikipedia/Wikimedia API y PageImages: las fichas solicitan un resumen y una miniatura al abrirse, con enlace al artículo y, cuando está disponible, a la página del archivo en Wikimedia Commons.
+- Guía de reutilización de Wikimedia Commons: https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia
+- GIPHY: https://giphy.com/ — la aplicación abre búsquedas externas; no copia ni redistribuye sus GIFs.
+- Tenor: https://tenor.com/ — la aplicación abre búsquedas externas; no copia ni redistribuye sus GIFs.
+- Términos y atribución GIPHY: https://developers.giphy.com/docs/api/
+- Atribución Tenor: https://developers.google.com/tenor/guides/attribution
+
+Si no hay conexión, o si Wikipedia no devuelve una miniatura, la ficha muestra una ilustración original local de FrikiMadrid.

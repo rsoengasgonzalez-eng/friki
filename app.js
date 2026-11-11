@@ -130,6 +130,28 @@
   }
   function addToRoute(id){if(customRoute.includes(id)){toast('Ya está en tu ruta');return}customRoute.push(id);persist();toast('Parada añadida a tu ruta ↝');}
 
+  const wikiCache=saved('fm-wiki-cache',{});
+  function rankItem(key){const [type,pos]=key.split(':');return {type,item:window.FRIKI_RANKINGS[type]?.find(x=>x.rank===Number(pos))}}
+  function rankMedia(type,rank){const offsets={movies:0,games:170,anime:340};return window.FRIKI_MEDIA[(offsets[type]+rank-1)%window.FRIKI_MEDIA.length]}
+  async function getWikiFicha(item){
+    const key=`${item.kind}:${item.title}`;if(wikiCache[key])return wikiCache[key];
+    const context={Película:'película',Videojuego:'videojuego',Anime:'anime'}[item.kind]||'';
+    const request=async lang=>{
+      const params=new URLSearchParams({action:'query',format:'json',origin:'*',generator:'search',gsrsearch:`${item.title} ${context}`,gsrlimit:'1',prop:'pageimages|extracts|info',inprop:'url',exintro:'1',explaintext:'1',exsentences:'4',piprop:'thumbnail|name',pithumbsize:'900'});
+      const r=await fetch(`https://${lang}.wikipedia.org/w/api.php?${params}`);if(!r.ok)throw new Error('Wikipedia');
+      const data=await r.json(),page=Object.values(data.query?.pages||{})[0];
+      return page?{title:page.title,extract:page.extract||'',article:page.fullurl||'',image:page.thumbnail?.source||'',file:page.pageimage?`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(page.pageimage.replace(/ /g,'_'))}`:'',lang}:null;
+    };
+    let result=null;try{result=await request('es');if(!result?.image){const en=await request('en');if(en?.image)result={...(result||en),image:en.image,file:en.file}}}catch{}
+    if(result){wikiCache[key]=result;try{localStorage.setItem('fm-wiki-cache',JSON.stringify(wikiCache))}catch{}}
+    return result;
+  }
+  function openRankingDetail(key){
+    const {type,item}=rankItem(key);if(!item)return;const media=rankMedia(type,item.rank),wikiSearch=`https://es.wikipedia.org/w/index.php?search=${encodeURIComponent(item.title+' '+item.kind)}`,commons=`https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(item.title)}&title=Special:MediaSearch&type=image`,giphy=`https://giphy.com/search/${encodeURIComponent(item.title)}`,tenor=`https://tenor.com/search/${encodeURIComponent(item.title)}-gifs`;
+    $('#modalBody').innerHTML=`<div class="rank-detail-visual"><div id="wikiImageBox" class="wiki-image-box"><img src="${media.image}" alt="Ilustración friki original de reserva"><span>Buscando imagen en Wikimedia…</span></div><div class="rank-gif-box"><img src="${media.gif}" alt="GIF original: ${escapeHtml(media.reaction)}"><b>${escapeHtml(media.reaction)}</b><small>${escapeHtml(media.theme)}</small></div></div><div class="modal-content rank-detail-content"><div class="rank-detail-top"><span class="rank-pill">#${String(item.rank).padStart(3,'0')} · ${escapeHtml(item.kind)}</span><span>${escapeHtml(item.category)}</span></div><h2>${escapeHtml(item.title)}</h2><p class="rank-hook">${escapeHtml(item.hook)}</p><div class="ficha-grid"><div><small>POR QUÉ ESTÁ AQUÍ</small><p>${escapeHtml(item.why)}</p></div><div><small>IDEAL PARA</small><p>${escapeHtml(item.ideal)}</p></div></div><blockquote>“${escapeHtml(item.quip)}”</blockquote><div id="wikiExtract" class="wiki-extract"><b>Ficha enciclopédica</b><p>Cargando resumen e imagen web…</p></div><div class="rank-web-links"><a href="${wikiSearch}" target="_blank" rel="noopener">Wikipedia ↗</a><a href="${commons}" target="_blank" rel="noopener">Imágenes libres ↗</a><a href="${giphy}" target="_blank" rel="noopener">GIFs en GIPHY ↗</a><a href="${tenor}" target="_blank" rel="noopener">GIFs en Tenor ↗</a><button data-copy-title="${escapeHtml(item.title)}">Copiar título</button></div><p class="rights-note">La imagen web se solicita a Wikipedia/Wikimedia al abrir la ficha y conserva enlace a su fuente. Los GIFs de personajes se consultan en GIPHY o Tenor, sujetos a sus condiciones. El GIF mostrado dentro de la ficha es arte original de FrikiMadrid.</p></div>`;
+    $('#detailModal').showModal();
+    getWikiFicha(item).then(w=>{if(!$('#detailModal').open)return;const extract=$('#wikiExtract'),box=$('#wikiImageBox');if(w){extract.innerHTML=`<b>Ficha enciclopédica · ${w.lang.toUpperCase()}</b><p>${escapeHtml(w.extract||'Consulta el artículo para ampliar información.')}</p>${w.article?`<a href="${w.article}" target="_blank" rel="noopener">Leer artículo completo ↗</a>`:''}`;if(w.image){box.innerHTML=`<img src="${w.image}" referrerpolicy="no-referrer" alt="Imagen web relacionada con ${escapeHtml(item.title)}"><span>${w.file?`<a href="${w.file}" target="_blank" rel="noopener">Fuente y licencia en Wikimedia ↗</a>`:'Imagen vía Wikipedia/Wikimedia'}</span>`}}else{extract.innerHTML='<b>Ficha enciclopédica</b><p>No se pudo recuperar el resumen web. Usa los enlaces para abrir la búsqueda manual.</p>';box.querySelector('span').textContent='Reserva gráfica original de FrikiMadrid'}});
+  }
   function filteredRankings(){
     const q=norm(rankingQuery);
     return window.FRIKI_RANKINGS[rankingType].filter(x=>!q||norm([x.title,x.category,x.why].join(' ')).includes(q));
@@ -138,7 +160,7 @@
     const meta={movies:['🎬','Las 100 películas frikis esenciales'],games:['🎮','Los 100 videojuegos imprescindibles'],anime:['🌸','Los 100 animes esenciales']}[rankingType];
     const found=filteredRankings(),items=found.slice(0,rankingLimit);
     $('#rankingIcon').textContent=meta[0];$('#rankingTitle').textContent=meta[1];$('#rankingCount').textContent=`${found.length} ${found.length===1?'título':'títulos'}`;
-    $('#rankingGrid').innerHTML=items.map(x=>`<article class="ranking-card"><div class="rank-number"><small>#</small>${String(x.rank).padStart(3,'0')}</div><div><span>${escapeHtml(x.category)}</span><h3>${escapeHtml(x.title)}</h3><p>${escapeHtml(x.why)}</p></div><button class="rank-copy" data-copy-title="${escapeHtml(x.title)}" aria-label="Copiar título">⧉</button></article>`).join('');
+    $('#rankingGrid').innerHTML=items.map(x=>`<article class="ranking-card" data-rank-detail="${rankingType}:${x.rank}"><div class="rank-number"><small>#</small>${String(x.rank).padStart(3,'0')}</div><div><span>${escapeHtml(x.category)}</span><h3>${escapeHtml(x.title)}</h3><p>${escapeHtml(x.hook)}</p></div><button class="rank-open" data-rank-detail="${rankingType}:${x.rank}" aria-label="Abrir ficha">→</button></article>`).join('');
     $('#rankingLoadMore').hidden=items.length>=found.length;
   }
 
@@ -179,6 +201,7 @@
       const kind=e.target.closest('[data-kind]');if(kind){state.kind=kind.dataset.kind;$$('[data-kind]').forEach(b=>b.classList.toggle('active',b===kind));renderExplore();return}
       const dis=e.target.closest('[data-display]');if(dis){state.display=dis.dataset.display;$$('[data-display]').forEach(b=>b.classList.toggle('active',b===dis));renderExplore();return}
       const ef=e.target.closest('[data-event-filter]');if(ef){eventFilter=ef.dataset.eventFilter;$$('[data-event-filter]').forEach(b=>b.classList.toggle('active',b===ef));renderEvents();return}
+      const rd=e.target.closest('[data-rank-detail]');if(rd){openRankingDetail(rd.dataset.rankDetail);return}
       const rt=e.target.closest('[data-ranking]');if(rt){rankingType=rt.dataset.ranking;rankingLimit=25;$$('[data-ranking]').forEach(b=>b.classList.toggle('active',b===rt));renderRankings();return}
       const cp=e.target.closest('[data-copy-title]');if(cp){navigator.clipboard?.writeText(cp.dataset.copyTitle);toast('Título copiado');return}
       const cal=e.target.closest('[data-calendar]');if(cal){const item=byId[cal.dataset.calendar];downloadBlob(eventIcs([item]),`${item.id}.ics`,'text/calendar');toast('Evento añadido como archivo de calendario');return}

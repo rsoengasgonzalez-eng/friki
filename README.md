@@ -21,6 +21,9 @@ Después abre `http://localhost:8080`.
 - **500 imágenes PNG + 500 GIFs animados**, 50 universos y 10 reacciones por universo.
 - Descargas completas separadas y cinco packs de 100 imágenes + 100 GIFs.
 - **Top 300 editorial**: 100 películas frikis, 100 videojuegos y 100 animes.
+- **Ficha ampliada para los 300 títulos**: gancho editorial, motivo de inclusión, recomendación, comentario humorístico y resumen enciclopédico web.
+- Imágenes relacionadas recuperadas al abrir cada ficha mediante la API pública de Wikipedia/Wikimedia, con enlace a la fuente y reserva gráfica local.
+- Accesos directos a búsquedas de GIFs de cada obra en GIPHY y Tenor, además de un GIF original de FrikiMadrid dentro de cada ficha.
 - Búsqueda, filtros, favoritos, calendarios `.ics`, compartir nativo y diseño responsive.
 - PWA instalable con caché de la aplicación; los recursos multimedia se almacenan bajo demanda.
 
@@ -33,6 +36,8 @@ La megagalería renderiza 40 recursos por bloque, utiliza `loading="lazy"` y per
 Los 1.000 archivos de la galería son diseños originales no oficiales. Se inspiran en **géneros y arquetipos** de cine y series frikis, pero no reproducen personajes, fotogramas, carteles ni logotipos de terceros.
 
 Los rankings son una selección editorial subjetiva basada en impacto cultural, calidad, influencia, vigencia y variedad. No reproducen puntuaciones de terceros.
+
+La aplicación no empaqueta portadas ni GIFs promocionales de franquicias. Cuando hay conexión, cada ficha solicita una imagen y un resumen mediante la API pública de Wikipedia/Wikimedia y muestra el enlace de procedencia. Los GIFs de personajes se abren como búsquedas externas en GIPHY o Tenor, sujetos a las condiciones de esas plataformas; dentro de la ficha se muestra además un GIF original de FrikiMadrid.
 
 ## Estructura principal
 

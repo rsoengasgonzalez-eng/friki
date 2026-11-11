@@ -40,13 +40,42 @@ anime=[
 assert len(movies)==len(games)==len(anime)==100
 why={
 'Fantasía épica':'Mundos enormes, mitología y sentido de aventura.','Ópera espacial':'Escala galáctica, tecnología y personajes memorables.','Ciencia ficción':'Ideas potentes sobre humanidad, futuro y tecnología.','RPG':'Decisiones, exploración y sistemas con enorme profundidad.','JRPG':'Aventura de grupo, progresión y narrativa de largo recorrido.','Aventura':'Descubrimiento, ritmo y momentos icónicos.','Cyberpunk':'Tecnología, identidad y sociedades al límite.','Superhéroes':'Poderes, mitología moderna y espectáculo.','Fantasía':'Imaginación, magia y universos que invitan a perderse.','Thriller':'Tensión, misterio y giros que mantienen enganchado.','Acción':'Combate, ritmo y dominio mecánico.','Mechas':'Tecnología colosal, conflicto y drama humano.'}
+category_notes={
+ 'espacio':'Viajes interestelares, tecnología imposible y decisiones a escala cósmica.',
+ 'fantas':'Mundos imaginarios, mitología, magia y una aventura que pide dejarse llevar.',
+ 'cyberpunk':'Tecnología avanzada, identidad y sociedades donde el progreso tiene un precio.',
+ 'superh':'Poderes extraordinarios, mitología moderna y conflictos muy humanos.',
+ 'terror':'Atmósfera, criaturas y tensión para disfrutar con las luces apagadas.',
+ 'rpg':'Exploración, decisiones y progresión para perderse durante muchas horas.',
+ 'jrpg':'Un gran viaje de grupo, combates, evolución y emoción de largo recorrido.',
+ 'aventura':'Descubrimiento, ritmo y la sensación de que cada esquina esconde algo.',
+ 'plataformas':'Movimiento preciso, niveles memorables y placer de dominar cada salto.',
+ 'estrategia':'Decisiones encadenadas, planificación y ese irresistible “un turno más”.',
+ 'mechas':'Máquinas colosales, espectáculo y drama humano dentro de la armadura.',
+ 'deportes':'Competición, superación y energía de equipo llevadas al límite.',
+ 'comedia':'Humor, personajes excéntricos y situaciones perfectas para compartir.',
+ 'drama':'Personajes complejos, emoción y momentos que se quedan después del final.',
+ 'sobrenatural':'Reglas extrañas, misterios y fuerzas que desafían lo cotidiano.',
+ 'misterio':'Pistas, sospechas y giros que recompensan prestar atención.',
+ 'ciencia ficci':'Ideas sobre el futuro, la tecnología y qué significa seguir siendo humano.',
+ 'animaci':'Imaginación visual, ritmo y libertad para construir cualquier universo.',
+ 'lucha':'Duelo, técnica y aprendizaje continuo hasta encontrar tu propio estilo.',
+ 'puzles':'Observación, lógica y la satisfacción inmediata de entender lo imposible.'
+}
+kind_intro={
+ 'Película':'Una puerta de entrada cinematográfica al universo friki',
+ 'Videojuego':'Una experiencia interactiva esencial para cualquier biblioteca friki',
+ 'Anime':'Una referencia del anime para descubrir o volver a ver'
+}
+quips=['Prepárate para cancelar tus planes.','Aviso: puede provocar teorías a las tres de la mañana.','Mejor con snacks y el móvil en modo avión.','Ideal para reclutar a alguien para el fandom.','Nivel de frikismo desbloqueado.','Aquí empieza una conversación peligrosamente larga.','Alta probabilidad de querer merchandising después.','Perfecta para decir “solo cinco minutos más”.','Material certificado para una maratón.','Contiene combustible para debates eternos.']
 def build(items,kind):
  out=[]
  for i,(title,cat) in enumerate(items,1):
   base=why.get(cat)
   if not base:
    key=next((k for k in why if k.lower() in cat.lower()),None);base=why.get(key,'Una obra influyente, disfrutable y muy representativa de su estilo.')
-  out.append({'rank':i,'title':title,'category':cat,'kind':kind,'why':base})
+  note=next((v for k,v in category_notes.items() if k in cat.lower()),'Una combinación de ideas, personajes y estilo con personalidad propia.')
+  out.append({'rank':i,'title':title,'category':cat,'kind':kind,'why':base,'hook':f"{kind_intro[kind]}: {note}",'ideal':f"Ideal si buscas {cat.lower()}, una obra con identidad y un buen tema de conversación.",'quip':quips[(i-1)%len(quips)]})
  return out
 data={'movies':build(movies,'Película'),'games':build(games,'Videojuego'),'anime':build(anime,'Anime'),'methodology':'Selección editorial de FrikiMadrid: impacto cultural, calidad, influencia, vigencia y variedad. El orden es deliberadamente subjetivo y está pensado para descubrir y debatir.'}
 (ROOT/'rankings-data.js').write_text('window.FRIKI_RANKINGS='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8')
