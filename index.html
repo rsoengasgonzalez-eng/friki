@@ -27,7 +27,8 @@
       <button data-view="explorar" class="nav-link">Explorar</button>
       <button data-view="eventos" class="nav-link">Eventos</button>
       <button data-view="rutas" class="nav-link">Rutas</button>
-      <button data-view="stickers" class="nav-link">Stickers</button>
+      <button data-view="rankings" class="nav-link">Top 300</button>
+      <button data-view="stickers" class="nav-link">Multimedia</button>
     </nav>
     <div class="top-actions">
       <button id="installBtn" class="icon-btn install-btn" hidden aria-label="Instalar aplicación">↓</button>
@@ -41,7 +42,7 @@
         <div class="hero-copy">
           <span class="eyebrow"><i></i> GUÍA INDEPENDIENTE · MADRID</span>
           <h1>Tu próxima<br><em>aventura friki</em><br>empieza aquí.</h1>
-          <p>Tiendas de culto, cafés lúdicos, museos, eventos y stickers originales para compartir.</p>
+          <p>Tiendas de culto, cafés lúdicos, museos, eventos y una megabiblioteca original de 500 GIFs y 500 imágenes para compartir.</p>
           <div class="hero-actions">
             <button class="btn primary" data-go="explorar">Explorar Madrid <span>→</span></button>
             <button class="btn ghost" data-go="eventos">Ver próximos eventos</button>
@@ -64,7 +65,7 @@
           <button data-go="explorar" data-filter-type="store"><strong id="storeStat">14</strong><span>Tiendas verificadas</span></button>
           <button data-go="explorar" data-filter-type="place"><strong id="placeStat">10</strong><span>Sitios para vivirlo</span></button>
           <button data-go="eventos"><strong id="eventStat">6</strong><span>Eventos en el radar</span></button>
-          <button data-go="stickers"><strong id="stickerStat">6</strong><span>Stickers originales</span></button>
+          <button data-go="stickers"><strong id="stickerStat">1.000</strong><span>GIFs e imágenes</span></button>
         </div>
       </div>
 
@@ -91,8 +92,10 @@
         <div class="card-grid" id="featuredGrid"></div>
       </section>
 
+      <section class="wrap section-pad top300-teaser"><div class="section-head"><div><span class="kicker">CANON FRIKI</span><h2>Tu lista de 300 imprescindibles</h2></div><button class="text-btn" data-go="rankings">Abrir Top 300 →</button></div><div class="top300-grid"><button data-go="rankings" data-rank-target="movies"><span>🎬</span><strong>100</strong><h3>Películas</h3><p>Ciencia ficción, fantasía, superhéroes, terror y culto.</p></button><button data-go="rankings" data-rank-target="games"><span>🎮</span><strong>100</strong><h3>Videojuegos</h3><p>Clásicos, RPG, indies, estrategia y aventuras esenciales.</p></button><button data-go="rankings" data-rank-target="anime"><span>🌸</span><strong>100</strong><h3>Animes</h3><p>Series y películas de todos los géneros y épocas.</p></button></div></section>
+
       <section class="wrap sticker-teaser">
-        <div><span class="kicker">PACK ORIGINAL</span><h2>Frikadas para WhatsApp</h2><p>Descarga PNG, WebP o GIF. En móvil también puedes compartir el archivo directamente.</p><button class="btn primary" data-go="stickers">Abrir el laboratorio →</button></div>
+        <div><span class="kicker">MEGAPACK ORIGINAL</span><h2>1.000 frikadas para compartir</h2><p>500 imágenes y 500 GIFs originales inspirados en géneros del cine y las series frikis. Busca, filtra, descarga o comparte desde el móvil.</p><button class="btn primary" data-go="stickers">Abrir la megagalería →</button></div>
         <div class="sticker-fan"><img src="assets/stickers/dado-critico.png" alt="Dado crítico"><img src="assets/stickers/robot-amigo.png" alt="Robot amigo"><img src="assets/stickers/corazon-pixel.png" alt="Corazón píxel"></div>
       </section>
     </section>
@@ -120,7 +123,7 @@
 
     <section id="view-eventos" class="view" data-view-panel="eventos">
       <div class="page-hero compact wrap"><span class="eyebrow"><i></i> AGENDA FRIKI</span><h1>Fechas para <em>subir de nivel.</em></h1><p>Confirmados, anunciados y citas en radar. Transparencia antes que hype.</p></div>
-      <div class="wrap event-toolbar"><div class="pills" id="eventFilters"><button class="active" data-event-filter="all">Todo</button><button data-event-filter="confirmado">Confirmados</button><button data-event-filter="anunciado">Anunciados</button><button data-event-filter="radar">Radar</button></div><button id="downloadAllCalendar" class="btn ghost small">＋ Calendario (.ics)</button></div>
+      <div class="wrap event-toolbar"><div class="pills" id="eventFilters"><button class="active" data-event-filter="all">Todo</button><button data-event-filter="confirmado">Confirmados</button><button data-event-filter="anunciado">Anunciados</button><button data-event-filter="radar">Radar</button><button data-event-filter="agenda">Agendas continuas</button></div><button id="downloadAllCalendar" class="btn ghost small">＋ Calendario (.ics)</button></div>
       <div class="wrap event-layout"><div id="eventList" class="event-list"></div><aside class="event-aside"><div class="radar-card"><span>📡</span><h3>Radar honesto</h3><p>“Confirmado” significa que fecha y recinto aparecen en la web oficial. “Anunciado” pide una última comprobación. “Radar” aún no tiene agenda cerrada.</p></div><div class="source-card"><b>Consejo de aventurero</b><p>Compra siempre desde la web oficial enlazada en cada ficha y revisa cambios de última hora.</p></div></aside></div>
     </section>
 
@@ -133,12 +136,28 @@
       </section>
     </section>
 
+    <section id="view-rankings" class="view" data-view-panel="rankings">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> CANON FRIKI · TOP 300</span><h1>100 películas, 100 juegos y <em>100 animes.</em></h1><p>Una selección editorial pensada para descubrir, recordar y debatir. No pretende ser una verdad matemática: combina influencia, calidad, impacto cultural, variedad y capacidad para seguir fascinando.</p></div>
+      <div class="wrap ranking-toolbar"><div class="ranking-tabs"><button class="active" data-ranking="movies">🎬 Películas</button><button data-ranking="games">🎮 Videojuegos</button><button data-ranking="anime">🌸 Anime</button></div><label class="search-box"><span>⌕</span><input id="rankingSearch" type="search" placeholder="Buscar título o género…"></label></div>
+      <div class="wrap ranking-method"><span>📜</span><p><b>Metodología editorial.</b> Impacto cultural, calidad, influencia, vigencia y variedad de épocas y estilos. El orden es subjetivo y está hecho para iniciar conversaciones, no para cerrarlas.</p></div>
+      <div class="wrap ranking-headline"><div><span id="rankingIcon">🎬</span><div><small>LISTA COMPLETA</small><h2 id="rankingTitle">Las 100 películas frikis esenciales</h2></div></div><strong id="rankingCount">100 títulos</strong></div>
+      <div class="wrap ranking-grid" id="rankingGrid"></div>
+      <div class="wrap load-more-wrap"><button id="rankingLoadMore" class="btn ghost">Mostrar 25 más</button></div>
+    </section>
+
     <section id="view-stickers" class="view" data-view-panel="stickers">
-      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> LABORATORIO DE STICKERS</span><h1>Comparte el <em>modo friki.</em></h1><p>Diseños originales creados para esta app. Descarga PNG/WebP o comparte el GIF en WhatsApp.</p></div>
-      <div class="wrap sticker-guide"><span>1</span><p><b>Elige</b> un diseño</p><i>→</i><span>2</span><p><b>Descarga</b> o comparte</p><i>→</i><span>3</span><p><b>En WhatsApp</b>, guárdalo como favorito</p></div>
-      <div class="wrap sticker-controls"><div class="segmented"><button class="active" data-sticker-mode="gif">GIF animado</button><button data-sticker-mode="png">PNG</button><button data-sticker-mode="webp">WebP</button></div><button id="downloadStickerPack" class="btn ghost small">↓ Descargar pack</button></div>
-      <div class="wrap sticker-grid" id="stickerGrid"></div>
-      <div class="wrap whatsapp-note"><span>💬</span><div><b>Cómo usarlo en WhatsApp</b><p>En móvil pulsa “Compartir” y elige WhatsApp. Para un sticker estático, descarga el WebP o PNG e impórtalo con la herramienta de creación de stickers de WhatsApp. Los GIF se envían como animación.</p></div></div>
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> MEGAGALERÍA FRIKI</span><h1>500 GIFs + 500 <em>imágenes.</em></h1><p>Quinientos diseños originales en dos formatos, inspirados en géneros de películas y series: espacio, magia, monstruos, superhéroes, cyberpunk, fantasía y mucho más.</p></div>
+      <div class="wrap media-stats"><div><strong>500</strong><span>GIFs animados</span></div><div><strong>500</strong><span>Imágenes PNG</span></div><div><strong>50</strong><span>Universos temáticos</span></div><div><strong>10</strong><span>Reacciones por universo</span></div></div>
+      <div class="wrap media-toolbar">
+        <label class="search-box media-search"><span>⌕</span><input id="mediaSearch" type="search" placeholder="Busca espacio, magia, vampiros, plot twist…"></label>
+        <div class="segmented media-format"><button class="active" data-sticker-mode="gif">GIF</button><button data-sticker-mode="image">Imagen</button></div>
+        <select id="mediaGroup"><option value="all">Cine y series</option><option value="Cine">Inspiración cine</option><option value="Series">Inspiración series</option></select>
+      </div>
+      <div class="wrap media-packbar"><div><b id="mediaResultCount">500 diseños</b><span> · arte fan original no oficial, sin personajes ni logotipos de terceros</span></div><div class="pack-buttons"><a class="btn ghost small" href="assets/media/packs/frikimadrid-500-imagenes.zip" download>↓ 500 imágenes</a><a class="btn primary small" href="assets/media/packs/frikimadrid-500-gifs.zip" download>↓ 500 GIFs</a></div></div>
+      <div class="wrap sticker-grid mega" id="stickerGrid"></div>
+      <div class="wrap load-more-wrap"><button id="mediaLoadMore" class="btn ghost">Cargar 40 más</button></div>
+      <div class="wrap pack-slices"><h2>Descarga por bloques</h2><p>Cada bloque contiene 100 imágenes y 100 GIFs. Es la opción más cómoda para el móvil.</p><div><a href="assets/media/packs/frikimadrid-media-001-100.zip" download>Pack 1<small>1–100</small></a><a href="assets/media/packs/frikimadrid-media-101-200.zip" download>Pack 2<small>101–200</small></a><a href="assets/media/packs/frikimadrid-media-201-300.zip" download>Pack 3<small>201–300</small></a><a href="assets/media/packs/frikimadrid-media-301-400.zip" download>Pack 4<small>301–400</small></a><a href="assets/media/packs/frikimadrid-media-401-500.zip" download>Pack 5<small>401–500</small></a></div></div>
+      <div class="wrap whatsapp-note"><span>💬</span><div><b>Listos para compartir</b><p>Pulsa “Compartir” desde el móvil y elige WhatsApp. Los GIF se envían como animación; las imágenes PNG pueden enviarse directamente o convertirse en sticker desde WhatsApp. Para mantener la app rápida, la galería carga 40 diseños cada vez.</p></div></div>
     </section>
 
     <section id="view-favoritos" class="view" data-view-panel="favoritos">
@@ -149,14 +168,17 @@
   </main>
 
   <footer>
-    <div class="wrap footer-grid"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">F</span><span>FRIKI<span class="brand-accent">MADRID</span></span></a><p>Guía independiente y sin afiliación con las marcas o eventos listados.</p></div><div><b>Explora</b><button data-go="explorar">Tiendas y sitios</button><button data-go="eventos">Agenda</button><button data-go="rutas">Rutas</button></div><div><b>Utilidades</b><button data-go="stickers">Stickers</button><button id="footerInstall">Instalar app</button><button id="shareApp">Compartir app</button></div><div><b>Actualización</b><p>11 de noviembre de 2026</p><p>Horarios, precios y agendas pueden cambiar.</p></div></div>
+    <div class="wrap footer-grid"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">F</span><span>FRIKI<span class="brand-accent">MADRID</span></span></a><p>Guía independiente y sin afiliación con las marcas o eventos listados.</p></div><div><b>Explora</b><button data-go="explorar">Tiendas y sitios</button><button data-go="eventos">Agenda</button><button data-go="rutas">Rutas</button><button data-go="rankings">Top 300 friki</button></div><div><b>Utilidades</b><button data-go="stickers">500 GIFs + 500 imágenes</button><button id="footerInstall">Instalar app</button><button id="shareApp">Compartir app</button></div><div><b>Actualización</b><p>11 de noviembre de 2026</p><p>Horarios, precios y agendas pueden cambiar.</p></div></div>
   </footer>
 
-  <nav class="mobile-nav" aria-label="Navegación móvil"><button data-view="inicio" class="active"><span>⌂</span>Inicio</button><button data-view="explorar"><span>⌕</span>Explorar</button><button data-view="eventos"><span>◇</span>Eventos</button><button data-view="rutas"><span>↝</span>Rutas</button><button data-view="stickers"><span>☺</span>Stickers</button></nav>
+  <nav class="mobile-nav" aria-label="Navegación móvil"><button data-view="inicio" class="active"><span>⌂</span>Inicio</button><button data-view="explorar"><span>⌕</span>Explorar</button><button data-view="eventos"><span>◇</span>Eventos</button><button data-view="rutas"><span>↝</span>Rutas</button><button data-view="rankings"><span>★</span>Top 300</button><button data-view="stickers"><span>☺</span>Galería</button></nav>
 
   <dialog id="detailModal" class="detail-modal"><button class="modal-close" aria-label="Cerrar">×</button><div id="modalBody"></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="data.js"></script>
+  <script src="expansion-data.js"></script>
+  <script src="media-manifest.js"></script>
+  <script src="rankings-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

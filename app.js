@@ -12,7 +12,13 @@
   let deferredPrompt = null;
   let activeView = 'inicio';
   let stickerMode = 'gif';
+  let mediaQuery = '';
+  let mediaGroup = 'all';
+  let mediaLimit = 40;
   let eventFilter = 'all';
+  let rankingType = 'movies';
+  let rankingQuery = '';
+  let rankingLimit = 25;
   const state = {kind:'all',tags:new Set(),zone:'all',budget:'all',query:'',favOnly:false,display:'grid'};
   const saved = (k,fallback) => { try{return JSON.parse(localStorage.getItem(k)) ?? fallback}catch{return fallback} };
   let favorites = new Set(saved('fm-favorites',[]));
@@ -34,6 +40,7 @@
     if(view==='explorar') renderExplore();
     if(view==='eventos') renderEvents();
     if(view==='rutas') renderRoutes();
+    if(view==='rankings') renderRankings();
     if(view==='stickers') renderStickers();
     if(view==='favoritos') renderFavorites();
   }
@@ -56,7 +63,7 @@
   function updateFavCount(){$('#favoriteCount').textContent=favorites.size}
 
   function renderHome(){
-    $('#storeStat').textContent=D.stores.length;$('#placeStat').textContent=D.places.length;$('#eventStat').textContent=D.events.length;$('#stickerStat').textContent=D.stickers.length;
+    $('#storeStat').textContent=D.stores.length;$('#placeStat').textContent=D.places.length;$('#eventStat').textContent=D.events.length;$('#stickerStat').textContent=(window.FRIKI_MEDIA.length*2).toLocaleString('es-ES');
     const universes=[
       {icon:'💥',name:'Cómic',text:'Librerías, novela gráfica y coleccionismo',tag:'comic',bg:'#fff0b8'},
       {icon:'🌸',name:'Manga & anime',text:'Manga, figuras, cosplay y cultura japonesa',tag:'manga',bg:'#ffe0ec'},
@@ -93,7 +100,7 @@
     $('#exploreGrid').innerHTML=items.map(card).join('');$('#exploreGrid').classList.toggle('list',state.display==='list');$('#emptyState').hidden=items.length>0;
   }
 
-  function statusText(s){return {confirmado:'Confirmado',anunciado:'Anunciado',revisar:'Verificar fecha',radar:'En el radar'}[s]||s}
+  function statusText(s){return {confirmado:'Confirmado',anunciado:'Anunciado',revisar:'Verificar fecha',radar:'En el radar',agenda:'Agenda continua'}[s]||s}
   function dateBadge(e){if(!e.start)return ['??','Pendiente'];const d=new Date(e.start+'T12:00:00');return [String(d.getDate()).padStart(2,'0'),d.toLocaleDateString('es-ES',{month:'short'}).replace('.','')]}
   function eventCard(e){const [day,mon]=dateBadge(e);return `<article class="event-card" data-id="${e.id}"><div class="event-date"><b>${day}</b><span>${mon}</span></div><div><span class="status ${e.status}">${statusText(e.status)}</span><h3>${e.emoji} ${escapeHtml(e.name)}</h3><p><b>${escapeHtml(e.dateLabel)}</b> · ${escapeHtml(e.venue)}</p><p>${escapeHtml(e.description)}</p></div><div class="event-buttons"><button data-fav="${e.id}">${favorites.has(e.id)?'♥ Guardado':'♡ Guardar'}</button>${e.start?`<button data-calendar="${e.id}">＋ Calendario</button>`:''}<a class="official" href="${e.url}" target="_blank" rel="noopener">Web oficial ↗</a></div></article>`}
   function renderEvents(){
@@ -123,12 +130,31 @@
   }
   function addToRoute(id){if(customRoute.includes(id)){toast('Ya está en tu ruta');return}customRoute.push(id);persist();toast('Parada añadida a tu ruta ↝');}
 
+  function filteredRankings(){
+    const q=norm(rankingQuery);
+    return window.FRIKI_RANKINGS[rankingType].filter(x=>!q||norm([x.title,x.category,x.why].join(' ')).includes(q));
+  }
+  function renderRankings(){
+    const meta={movies:['🎬','Las 100 películas frikis esenciales'],games:['🎮','Los 100 videojuegos imprescindibles'],anime:['🌸','Los 100 animes esenciales']}[rankingType];
+    const found=filteredRankings(),items=found.slice(0,rankingLimit);
+    $('#rankingIcon').textContent=meta[0];$('#rankingTitle').textContent=meta[1];$('#rankingCount').textContent=`${found.length} ${found.length===1?'título':'títulos'}`;
+    $('#rankingGrid').innerHTML=items.map(x=>`<article class="ranking-card"><div class="rank-number"><small>#</small>${String(x.rank).padStart(3,'0')}</div><div><span>${escapeHtml(x.category)}</span><h3>${escapeHtml(x.title)}</h3><p>${escapeHtml(x.why)}</p></div><button class="rank-copy" data-copy-title="${escapeHtml(x.title)}" aria-label="Copiar título">⧉</button></article>`).join('');
+    $('#rankingLoadMore').hidden=items.length>=found.length;
+  }
+
+  function filteredMedia(){
+    const q=norm(mediaQuery);
+    return window.FRIKI_MEDIA.filter(m=>(mediaGroup==='all'||m.group===mediaGroup)&&(!q||norm([m.theme,m.reaction,m.subtitle,m.group].join(' ')).includes(q)));
+  }
   function renderStickers(){
-    $('#stickerGrid').innerHTML=D.stickers.map(s=>{const path=`assets/stickers/${s.id}.${stickerMode}`;return `<article class="sticker-card"><div class="sticker-preview"><span class="format-badge">${stickerMode.toUpperCase()}</span><img src="${path}" alt="${escapeHtml(s.alt)}"></div><h3>${escapeHtml(s.name)}</h3><p>${escapeHtml(s.caption)} · Diseño original</p><div class="sticker-actions"><a href="${path}" download="frikimadrid-${s.id}.${stickerMode}">↓ Descargar</a><button class="share-sticker" data-share-sticker="${s.id}">Compartir</button></div></article>`}).join('');
+    const found=filteredMedia(),items=found.slice(0,mediaLimit),ext=stickerMode==='gif'?'gif':'png';
+    $('#mediaResultCount').textContent=`${found.length} ${found.length===1?'diseño':'diseños'} · ${found.length*2} archivos`;
+    $('#stickerGrid').innerHTML=items.map(s=>{const path=stickerMode==='gif'?s.gif:s.image;return `<article class="sticker-card media-card"><div class="sticker-preview"><span class="format-badge">${ext.toUpperCase()} · ${s.group}</span><img loading="lazy" decoding="async" src="${path}" alt="${escapeHtml(s.reaction+' · '+s.theme)}"></div><h3>${escapeHtml(s.reaction)}</h3><p>${escapeHtml(s.theme)} · ${escapeHtml(s.subtitle)}</p><div class="sticker-actions"><a href="${path}" download="frikimadrid-${s.id}.${ext}">↓ Descargar</a><button class="share-sticker" data-share-sticker="${s.id}">Compartir</button></div></article>`}).join('');
+    $('#mediaLoadMore').hidden=items.length>=found.length;
   }
   async function shareSticker(id){
-    const s=D.stickers.find(x=>x.id===id),path=`assets/stickers/${id}.${stickerMode}`;
-    try{const blob=await fetch(path).then(r=>r.blob());const file=new File([blob],`frikimadrid-${id}.${stickerMode}`,{type:blob.type||`image/${stickerMode}`});if(navigator.canShare?.({files:[file]})){await navigator.share({files:[file],title:s.name,text:'Sticker original de FrikiMadrid'});return}throw new Error('fallback')}catch{const a=document.createElement('a');a.href=path;a.download=`frikimadrid-${id}.${stickerMode}`;a.click();toast('Archivo descargado. Ya puedes enviarlo por WhatsApp.');}
+    const s=window.FRIKI_MEDIA.find(x=>x.id===id),ext=stickerMode==='gif'?'gif':'png',path=stickerMode==='gif'?s.gif:s.image;
+    try{const blob=await fetch(path).then(r=>r.blob());const file=new File([blob],`frikimadrid-${id}.${ext}`,{type:blob.type||`image/${ext}`});if(navigator.canShare?.({files:[file]})){await navigator.share({files:[file],title:s.reaction,text:`${s.theme} · diseño original de FrikiMadrid`});return}throw new Error('fallback')}catch{const a=document.createElement('a');a.href=path;a.download=`frikimadrid-${id}.${ext}`;a.click();toast('Archivo descargado. Ya puedes enviarlo por WhatsApp.');}
   }
 
   function renderFavorites(){
@@ -145,7 +171,7 @@
 
   function bind(){
     document.addEventListener('click',e=>{
-      const go=e.target.closest('[data-go]');if(go){if(go.dataset.filterType){state.kind=go.dataset.filterType;$$('[data-kind]').forEach(b=>b.classList.toggle('active',b.dataset.kind===state.kind));}navigate(go.dataset.go);return}
+      const go=e.target.closest('[data-go]');if(go){if(go.dataset.filterType){state.kind=go.dataset.filterType;$$('[data-kind]').forEach(b=>b.classList.toggle('active',b.dataset.kind===state.kind));}if(go.dataset.rankTarget){rankingType=go.dataset.rankTarget;rankingLimit=25;$$('[data-ranking]').forEach(b=>b.classList.toggle('active',b.dataset.ranking===rankingType));}navigate(go.dataset.go);return}
       const nv=e.target.closest('[data-view]');if(nv){navigate(nv.dataset.view);return}
       const fav=e.target.closest('[data-fav]');if(fav){e.preventDefault();toggleFavorite(fav.dataset.fav);if(byId[fav.dataset.fav]?.kind==='event')renderEvents();return}
       const detail=e.target.closest('[data-detail]');if(detail){openDetail(detail.dataset.detail);return}
@@ -153,8 +179,10 @@
       const kind=e.target.closest('[data-kind]');if(kind){state.kind=kind.dataset.kind;$$('[data-kind]').forEach(b=>b.classList.toggle('active',b===kind));renderExplore();return}
       const dis=e.target.closest('[data-display]');if(dis){state.display=dis.dataset.display;$$('[data-display]').forEach(b=>b.classList.toggle('active',b===dis));renderExplore();return}
       const ef=e.target.closest('[data-event-filter]');if(ef){eventFilter=ef.dataset.eventFilter;$$('[data-event-filter]').forEach(b=>b.classList.toggle('active',b===ef));renderEvents();return}
+      const rt=e.target.closest('[data-ranking]');if(rt){rankingType=rt.dataset.ranking;rankingLimit=25;$$('[data-ranking]').forEach(b=>b.classList.toggle('active',b===rt));renderRankings();return}
+      const cp=e.target.closest('[data-copy-title]');if(cp){navigator.clipboard?.writeText(cp.dataset.copyTitle);toast('Título copiado');return}
       const cal=e.target.closest('[data-calendar]');if(cal){const item=byId[cal.dataset.calendar];downloadBlob(eventIcs([item]),`${item.id}.ics`,'text/calendar');toast('Evento añadido como archivo de calendario');return}
-      const sm=e.target.closest('[data-sticker-mode]');if(sm){stickerMode=sm.dataset.stickerMode;$$('[data-sticker-mode]').forEach(b=>b.classList.toggle('active',b===sm));renderStickers();return}
+      const sm=e.target.closest('[data-sticker-mode]');if(sm){stickerMode=sm.dataset.stickerMode;mediaLimit=40;$$('[data-sticker-mode]').forEach(b=>b.classList.toggle('active',b===sm));renderStickers();return}
       const ss=e.target.closest('[data-share-sticker]');if(ss){shareSticker(ss.dataset.shareSticker);return}
       const add=e.target.closest('[data-route-add]');if(add){addToRoute(add.dataset.routeAdd);$('#detailModal').close();return}
       const rem=e.target.closest('[data-route-remove]');if(rem){customRoute=customRoute.filter(x=>x!==rem.dataset.routeRemove);persist();renderCustomRoute();return}
@@ -169,7 +197,11 @@
     $('.modal-close').addEventListener('click',()=>$('#detailModal').close());
     $('#detailModal').addEventListener('click',e=>{if(e.target===$('#detailModal'))$('#detailModal').close()});
     $('#downloadAllCalendar').addEventListener('click',()=>downloadBlob(eventIcs(D.events),'agenda-frikimadrid.ics','text/calendar'));
-    $('#downloadStickerPack').addEventListener('click',()=>{const a=document.createElement('a');a.href='assets/frikimadrid-sticker-pack.zip';a.download='frikimadrid-sticker-pack.zip';a.click()});
+    $('#rankingSearch').addEventListener('input',e=>{rankingQuery=e.target.value;rankingLimit=25;renderRankings()});
+    $('#rankingLoadMore').addEventListener('click',()=>{rankingLimit+=25;renderRankings()});
+    $('#mediaSearch').addEventListener('input',e=>{mediaQuery=e.target.value;mediaLimit=40;renderStickers()});
+    $('#mediaGroup').addEventListener('change',e=>{mediaGroup=e.target.value;mediaLimit=40;renderStickers()});
+    $('#mediaLoadMore').addEventListener('click',()=>{mediaLimit+=40;renderStickers()});
     document.addEventListener('click',e=>{if(e.target.id==='clearRoute'){customRoute=[];persist();renderCustomRoute()}});
     $('#shareApp').addEventListener('click',async()=>{try{await navigator.share({title:'FrikiMadrid',text:'Tiendas, sitios, eventos y stickers frikis de Madrid',url:location.href})}catch{await navigator.clipboard?.writeText(location.href);toast('Enlace copiado')}});
     window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;$('#installBtn').hidden=false});
@@ -177,7 +209,7 @@
     $('#installBtn').addEventListener('click',install);$('#footerInstall').addEventListener('click',install);
   }
   function init(){
-    setupFilters();renderHome();renderExplore();renderEvents();renderRoutes();renderStickers();updateFavCount();bind();
+    setupFilters();renderHome();renderExplore();renderEvents();renderRoutes();renderRankings();renderStickers();updateFavCount();bind();
     const hash=location.hash.replace('#','');if($(`[data-view-panel="${hash}"]`))navigate(hash,false);
     if('serviceWorker' in navigator&&location.protocol.startsWith('http'))navigator.serviceWorker.register('sw.js').catch(()=>{});
   }

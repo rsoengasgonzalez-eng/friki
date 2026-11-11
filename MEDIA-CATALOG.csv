@@ -1,0 +1,501 @@
+﻿id,grupo,universo,reacción,subtítulo,imagen_png,gif_animado
+m001,Cine,Ópera espacial,PLANAZO,Hoy se sale,assets/media/images/m001.png,assets/media/gifs/m001.gif
+m002,Cine,Ópera espacial,SIN SPOILERS,Promesa de honor,assets/media/images/m002.png,assets/media/gifs/m002.gif
+m003,Cine,Ópera espacial,MARATÓN,Un capítulo más,assets/media/images/m003.png,assets/media/gifs/m003.gif
+m004,Cine,Ópera espacial,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m004.png,assets/media/gifs/m004.gif
+m005,Cine,Ópera espacial,SUBE DE NIVEL,Experiencia +100,assets/media/images/m005.png,assets/media/gifs/m005.gif
+m006,Cine,Ópera espacial,MISIÓN ACEPTADA,Forma la party,assets/media/images/m006.png,assets/media/gifs/m006.gif
+m007,Cine,Ópera espacial,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m007.png,assets/media/gifs/m007.gif
+m008,Cine,Ópera espacial,PLOT TWIST,No me lo esperaba,assets/media/images/m008.png,assets/media/gifs/m008.gif
+m009,Cine,Ópera espacial,FANDOM ON,Modo comunidad,assets/media/images/m009.png,assets/media/gifs/m009.gif
+m010,Cine,Ópera espacial,MODO LEYENDA,Final desbloqueado,assets/media/images/m010.png,assets/media/gifs/m010.gif
+m011,Cine,Arqueología aventurera,PLANAZO,Hoy se sale,assets/media/images/m011.png,assets/media/gifs/m011.gif
+m012,Cine,Arqueología aventurera,SIN SPOILERS,Promesa de honor,assets/media/images/m012.png,assets/media/gifs/m012.gif
+m013,Cine,Arqueología aventurera,MARATÓN,Un capítulo más,assets/media/images/m013.png,assets/media/gifs/m013.gif
+m014,Cine,Arqueología aventurera,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m014.png,assets/media/gifs/m014.gif
+m015,Cine,Arqueología aventurera,SUBE DE NIVEL,Experiencia +100,assets/media/images/m015.png,assets/media/gifs/m015.gif
+m016,Cine,Arqueología aventurera,MISIÓN ACEPTADA,Forma la party,assets/media/images/m016.png,assets/media/gifs/m016.gif
+m017,Cine,Arqueología aventurera,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m017.png,assets/media/gifs/m017.gif
+m018,Cine,Arqueología aventurera,PLOT TWIST,No me lo esperaba,assets/media/images/m018.png,assets/media/gifs/m018.gif
+m019,Cine,Arqueología aventurera,FANDOM ON,Modo comunidad,assets/media/images/m019.png,assets/media/gifs/m019.gif
+m020,Cine,Arqueología aventurera,MODO LEYENDA,Final desbloqueado,assets/media/images/m020.png,assets/media/gifs/m020.gif
+m021,Cine,Cazafantasmas,PLANAZO,Hoy se sale,assets/media/images/m021.png,assets/media/gifs/m021.gif
+m022,Cine,Cazafantasmas,SIN SPOILERS,Promesa de honor,assets/media/images/m022.png,assets/media/gifs/m022.gif
+m023,Cine,Cazafantasmas,MARATÓN,Un capítulo más,assets/media/images/m023.png,assets/media/gifs/m023.gif
+m024,Cine,Cazafantasmas,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m024.png,assets/media/gifs/m024.gif
+m025,Cine,Cazafantasmas,SUBE DE NIVEL,Experiencia +100,assets/media/images/m025.png,assets/media/gifs/m025.gif
+m026,Cine,Cazafantasmas,MISIÓN ACEPTADA,Forma la party,assets/media/images/m026.png,assets/media/gifs/m026.gif
+m027,Cine,Cazafantasmas,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m027.png,assets/media/gifs/m027.gif
+m028,Cine,Cazafantasmas,PLOT TWIST,No me lo esperaba,assets/media/images/m028.png,assets/media/gifs/m028.gif
+m029,Cine,Cazafantasmas,FANDOM ON,Modo comunidad,assets/media/images/m029.png,assets/media/gifs/m029.gif
+m030,Cine,Cazafantasmas,MODO LEYENDA,Final desbloqueado,assets/media/images/m030.png,assets/media/gifs/m030.gif
+m031,Cine,Dinosaurios en fuga,PLANAZO,Hoy se sale,assets/media/images/m031.png,assets/media/gifs/m031.gif
+m032,Cine,Dinosaurios en fuga,SIN SPOILERS,Promesa de honor,assets/media/images/m032.png,assets/media/gifs/m032.gif
+m033,Cine,Dinosaurios en fuga,MARATÓN,Un capítulo más,assets/media/images/m033.png,assets/media/gifs/m033.gif
+m034,Cine,Dinosaurios en fuga,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m034.png,assets/media/gifs/m034.gif
+m035,Cine,Dinosaurios en fuga,SUBE DE NIVEL,Experiencia +100,assets/media/images/m035.png,assets/media/gifs/m035.gif
+m036,Cine,Dinosaurios en fuga,MISIÓN ACEPTADA,Forma la party,assets/media/images/m036.png,assets/media/gifs/m036.gif
+m037,Cine,Dinosaurios en fuga,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m037.png,assets/media/gifs/m037.gif
+m038,Cine,Dinosaurios en fuga,PLOT TWIST,No me lo esperaba,assets/media/images/m038.png,assets/media/gifs/m038.gif
+m039,Cine,Dinosaurios en fuga,FANDOM ON,Modo comunidad,assets/media/images/m039.png,assets/media/gifs/m039.gif
+m040,Cine,Dinosaurios en fuga,MODO LEYENDA,Final desbloqueado,assets/media/images/m040.png,assets/media/gifs/m040.gif
+m041,Cine,Kaiju contra ciudad,PLANAZO,Hoy se sale,assets/media/images/m041.png,assets/media/gifs/m041.gif
+m042,Cine,Kaiju contra ciudad,SIN SPOILERS,Promesa de honor,assets/media/images/m042.png,assets/media/gifs/m042.gif
+m043,Cine,Kaiju contra ciudad,MARATÓN,Un capítulo más,assets/media/images/m043.png,assets/media/gifs/m043.gif
+m044,Cine,Kaiju contra ciudad,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m044.png,assets/media/gifs/m044.gif
+m045,Cine,Kaiju contra ciudad,SUBE DE NIVEL,Experiencia +100,assets/media/images/m045.png,assets/media/gifs/m045.gif
+m046,Cine,Kaiju contra ciudad,MISIÓN ACEPTADA,Forma la party,assets/media/images/m046.png,assets/media/gifs/m046.gif
+m047,Cine,Kaiju contra ciudad,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m047.png,assets/media/gifs/m047.gif
+m048,Cine,Kaiju contra ciudad,PLOT TWIST,No me lo esperaba,assets/media/images/m048.png,assets/media/gifs/m048.gif
+m049,Cine,Kaiju contra ciudad,FANDOM ON,Modo comunidad,assets/media/images/m049.png,assets/media/gifs/m049.gif
+m050,Cine,Kaiju contra ciudad,MODO LEYENDA,Final desbloqueado,assets/media/images/m050.png,assets/media/gifs/m050.gif
+m051,Cine,Academia de magia,PLANAZO,Hoy se sale,assets/media/images/m051.png,assets/media/gifs/m051.gif
+m052,Cine,Academia de magia,SIN SPOILERS,Promesa de honor,assets/media/images/m052.png,assets/media/gifs/m052.gif
+m053,Cine,Academia de magia,MARATÓN,Un capítulo más,assets/media/images/m053.png,assets/media/gifs/m053.gif
+m054,Cine,Academia de magia,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m054.png,assets/media/gifs/m054.gif
+m055,Cine,Academia de magia,SUBE DE NIVEL,Experiencia +100,assets/media/images/m055.png,assets/media/gifs/m055.gif
+m056,Cine,Academia de magia,MISIÓN ACEPTADA,Forma la party,assets/media/images/m056.png,assets/media/gifs/m056.gif
+m057,Cine,Academia de magia,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m057.png,assets/media/gifs/m057.gif
+m058,Cine,Academia de magia,PLOT TWIST,No me lo esperaba,assets/media/images/m058.png,assets/media/gifs/m058.gif
+m059,Cine,Academia de magia,FANDOM ON,Modo comunidad,assets/media/images/m059.png,assets/media/gifs/m059.gif
+m060,Cine,Academia de magia,MODO LEYENDA,Final desbloqueado,assets/media/images/m060.png,assets/media/gifs/m060.gif
+m061,Cine,Fantasía épica,PLANAZO,Hoy se sale,assets/media/images/m061.png,assets/media/gifs/m061.gif
+m062,Cine,Fantasía épica,SIN SPOILERS,Promesa de honor,assets/media/images/m062.png,assets/media/gifs/m062.gif
+m063,Cine,Fantasía épica,MARATÓN,Un capítulo más,assets/media/images/m063.png,assets/media/gifs/m063.gif
+m064,Cine,Fantasía épica,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m064.png,assets/media/gifs/m064.gif
+m065,Cine,Fantasía épica,SUBE DE NIVEL,Experiencia +100,assets/media/images/m065.png,assets/media/gifs/m065.gif
+m066,Cine,Fantasía épica,MISIÓN ACEPTADA,Forma la party,assets/media/images/m066.png,assets/media/gifs/m066.gif
+m067,Cine,Fantasía épica,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m067.png,assets/media/gifs/m067.gif
+m068,Cine,Fantasía épica,PLOT TWIST,No me lo esperaba,assets/media/images/m068.png,assets/media/gifs/m068.gif
+m069,Cine,Fantasía épica,FANDOM ON,Modo comunidad,assets/media/images/m069.png,assets/media/gifs/m069.gif
+m070,Cine,Fantasía épica,MODO LEYENDA,Final desbloqueado,assets/media/images/m070.png,assets/media/gifs/m070.gif
+m071,Cine,Vampiros góticos,PLANAZO,Hoy se sale,assets/media/images/m071.png,assets/media/gifs/m071.gif
+m072,Cine,Vampiros góticos,SIN SPOILERS,Promesa de honor,assets/media/images/m072.png,assets/media/gifs/m072.gif
+m073,Cine,Vampiros góticos,MARATÓN,Un capítulo más,assets/media/images/m073.png,assets/media/gifs/m073.gif
+m074,Cine,Vampiros góticos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m074.png,assets/media/gifs/m074.gif
+m075,Cine,Vampiros góticos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m075.png,assets/media/gifs/m075.gif
+m076,Cine,Vampiros góticos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m076.png,assets/media/gifs/m076.gif
+m077,Cine,Vampiros góticos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m077.png,assets/media/gifs/m077.gif
+m078,Cine,Vampiros góticos,PLOT TWIST,No me lo esperaba,assets/media/images/m078.png,assets/media/gifs/m078.gif
+m079,Cine,Vampiros góticos,FANDOM ON,Modo comunidad,assets/media/images/m079.png,assets/media/gifs/m079.gif
+m080,Cine,Vampiros góticos,MODO LEYENDA,Final desbloqueado,assets/media/images/m080.png,assets/media/gifs/m080.gif
+m081,Cine,Apocalipsis zombi,PLANAZO,Hoy se sale,assets/media/images/m081.png,assets/media/gifs/m081.gif
+m082,Cine,Apocalipsis zombi,SIN SPOILERS,Promesa de honor,assets/media/images/m082.png,assets/media/gifs/m082.gif
+m083,Cine,Apocalipsis zombi,MARATÓN,Un capítulo más,assets/media/images/m083.png,assets/media/gifs/m083.gif
+m084,Cine,Apocalipsis zombi,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m084.png,assets/media/gifs/m084.gif
+m085,Cine,Apocalipsis zombi,SUBE DE NIVEL,Experiencia +100,assets/media/images/m085.png,assets/media/gifs/m085.gif
+m086,Cine,Apocalipsis zombi,MISIÓN ACEPTADA,Forma la party,assets/media/images/m086.png,assets/media/gifs/m086.gif
+m087,Cine,Apocalipsis zombi,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m087.png,assets/media/gifs/m087.gif
+m088,Cine,Apocalipsis zombi,PLOT TWIST,No me lo esperaba,assets/media/images/m088.png,assets/media/gifs/m088.gif
+m089,Cine,Apocalipsis zombi,FANDOM ON,Modo comunidad,assets/media/images/m089.png,assets/media/gifs/m089.gif
+m090,Cine,Apocalipsis zombi,MODO LEYENDA,Final desbloqueado,assets/media/images/m090.png,assets/media/gifs/m090.gif
+m091,Cine,Invasión alienígena,PLANAZO,Hoy se sale,assets/media/images/m091.png,assets/media/gifs/m091.gif
+m092,Cine,Invasión alienígena,SIN SPOILERS,Promesa de honor,assets/media/images/m092.png,assets/media/gifs/m092.gif
+m093,Cine,Invasión alienígena,MARATÓN,Un capítulo más,assets/media/images/m093.png,assets/media/gifs/m093.gif
+m094,Cine,Invasión alienígena,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m094.png,assets/media/gifs/m094.gif
+m095,Cine,Invasión alienígena,SUBE DE NIVEL,Experiencia +100,assets/media/images/m095.png,assets/media/gifs/m095.gif
+m096,Cine,Invasión alienígena,MISIÓN ACEPTADA,Forma la party,assets/media/images/m096.png,assets/media/gifs/m096.gif
+m097,Cine,Invasión alienígena,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m097.png,assets/media/gifs/m097.gif
+m098,Cine,Invasión alienígena,PLOT TWIST,No me lo esperaba,assets/media/images/m098.png,assets/media/gifs/m098.gif
+m099,Cine,Invasión alienígena,FANDOM ON,Modo comunidad,assets/media/images/m099.png,assets/media/gifs/m099.gif
+m100,Cine,Invasión alienígena,MODO LEYENDA,Final desbloqueado,assets/media/images/m100.png,assets/media/gifs/m100.gif
+m101,Cine,Robots rebeldes,PLANAZO,Hoy se sale,assets/media/images/m101.png,assets/media/gifs/m101.gif
+m102,Cine,Robots rebeldes,SIN SPOILERS,Promesa de honor,assets/media/images/m102.png,assets/media/gifs/m102.gif
+m103,Cine,Robots rebeldes,MARATÓN,Un capítulo más,assets/media/images/m103.png,assets/media/gifs/m103.gif
+m104,Cine,Robots rebeldes,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m104.png,assets/media/gifs/m104.gif
+m105,Cine,Robots rebeldes,SUBE DE NIVEL,Experiencia +100,assets/media/images/m105.png,assets/media/gifs/m105.gif
+m106,Cine,Robots rebeldes,MISIÓN ACEPTADA,Forma la party,assets/media/images/m106.png,assets/media/gifs/m106.gif
+m107,Cine,Robots rebeldes,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m107.png,assets/media/gifs/m107.gif
+m108,Cine,Robots rebeldes,PLOT TWIST,No me lo esperaba,assets/media/images/m108.png,assets/media/gifs/m108.gif
+m109,Cine,Robots rebeldes,FANDOM ON,Modo comunidad,assets/media/images/m109.png,assets/media/gifs/m109.gif
+m110,Cine,Robots rebeldes,MODO LEYENDA,Final desbloqueado,assets/media/images/m110.png,assets/media/gifs/m110.gif
+m111,Cine,Espías tecnológicos,PLANAZO,Hoy se sale,assets/media/images/m111.png,assets/media/gifs/m111.gif
+m112,Cine,Espías tecnológicos,SIN SPOILERS,Promesa de honor,assets/media/images/m112.png,assets/media/gifs/m112.gif
+m113,Cine,Espías tecnológicos,MARATÓN,Un capítulo más,assets/media/images/m113.png,assets/media/gifs/m113.gif
+m114,Cine,Espías tecnológicos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m114.png,assets/media/gifs/m114.gif
+m115,Cine,Espías tecnológicos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m115.png,assets/media/gifs/m115.gif
+m116,Cine,Espías tecnológicos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m116.png,assets/media/gifs/m116.gif
+m117,Cine,Espías tecnológicos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m117.png,assets/media/gifs/m117.gif
+m118,Cine,Espías tecnológicos,PLOT TWIST,No me lo esperaba,assets/media/images/m118.png,assets/media/gifs/m118.gif
+m119,Cine,Espías tecnológicos,FANDOM ON,Modo comunidad,assets/media/images/m119.png,assets/media/gifs/m119.gif
+m120,Cine,Espías tecnológicos,MODO LEYENDA,Final desbloqueado,assets/media/images/m120.png,assets/media/gifs/m120.gif
+m121,Cine,Piratas fantásticos,PLANAZO,Hoy se sale,assets/media/images/m121.png,assets/media/gifs/m121.gif
+m122,Cine,Piratas fantásticos,SIN SPOILERS,Promesa de honor,assets/media/images/m122.png,assets/media/gifs/m122.gif
+m123,Cine,Piratas fantásticos,MARATÓN,Un capítulo más,assets/media/images/m123.png,assets/media/gifs/m123.gif
+m124,Cine,Piratas fantásticos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m124.png,assets/media/gifs/m124.gif
+m125,Cine,Piratas fantásticos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m125.png,assets/media/gifs/m125.gif
+m126,Cine,Piratas fantásticos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m126.png,assets/media/gifs/m126.gif
+m127,Cine,Piratas fantásticos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m127.png,assets/media/gifs/m127.gif
+m128,Cine,Piratas fantásticos,PLOT TWIST,No me lo esperaba,assets/media/images/m128.png,assets/media/gifs/m128.gif
+m129,Cine,Piratas fantásticos,FANDOM ON,Modo comunidad,assets/media/images/m129.png,assets/media/gifs/m129.gif
+m130,Cine,Piratas fantásticos,MODO LEYENDA,Final desbloqueado,assets/media/images/m130.png,assets/media/gifs/m130.gif
+m131,Cine,Viajes temporales,PLANAZO,Hoy se sale,assets/media/images/m131.png,assets/media/gifs/m131.gif
+m132,Cine,Viajes temporales,SIN SPOILERS,Promesa de honor,assets/media/images/m132.png,assets/media/gifs/m132.gif
+m133,Cine,Viajes temporales,MARATÓN,Un capítulo más,assets/media/images/m133.png,assets/media/gifs/m133.gif
+m134,Cine,Viajes temporales,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m134.png,assets/media/gifs/m134.gif
+m135,Cine,Viajes temporales,SUBE DE NIVEL,Experiencia +100,assets/media/images/m135.png,assets/media/gifs/m135.gif
+m136,Cine,Viajes temporales,MISIÓN ACEPTADA,Forma la party,assets/media/images/m136.png,assets/media/gifs/m136.gif
+m137,Cine,Viajes temporales,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m137.png,assets/media/gifs/m137.gif
+m138,Cine,Viajes temporales,PLOT TWIST,No me lo esperaba,assets/media/images/m138.png,assets/media/gifs/m138.gif
+m139,Cine,Viajes temporales,FANDOM ON,Modo comunidad,assets/media/images/m139.png,assets/media/gifs/m139.gif
+m140,Cine,Viajes temporales,MODO LEYENDA,Final desbloqueado,assets/media/images/m140.png,assets/media/gifs/m140.gif
+m141,Cine,Simulación virtual,PLANAZO,Hoy se sale,assets/media/images/m141.png,assets/media/gifs/m141.gif
+m142,Cine,Simulación virtual,SIN SPOILERS,Promesa de honor,assets/media/images/m142.png,assets/media/gifs/m142.gif
+m143,Cine,Simulación virtual,MARATÓN,Un capítulo más,assets/media/images/m143.png,assets/media/gifs/m143.gif
+m144,Cine,Simulación virtual,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m144.png,assets/media/gifs/m144.gif
+m145,Cine,Simulación virtual,SUBE DE NIVEL,Experiencia +100,assets/media/images/m145.png,assets/media/gifs/m145.gif
+m146,Cine,Simulación virtual,MISIÓN ACEPTADA,Forma la party,assets/media/images/m146.png,assets/media/gifs/m146.gif
+m147,Cine,Simulación virtual,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m147.png,assets/media/gifs/m147.gif
+m148,Cine,Simulación virtual,PLOT TWIST,No me lo esperaba,assets/media/images/m148.png,assets/media/gifs/m148.gif
+m149,Cine,Simulación virtual,FANDOM ON,Modo comunidad,assets/media/images/m149.png,assets/media/gifs/m149.gif
+m150,Cine,Simulación virtual,MODO LEYENDA,Final desbloqueado,assets/media/images/m150.png,assets/media/gifs/m150.gif
+m151,Cine,Superhéroes multiversales,PLANAZO,Hoy se sale,assets/media/images/m151.png,assets/media/gifs/m151.gif
+m152,Cine,Superhéroes multiversales,SIN SPOILERS,Promesa de honor,assets/media/images/m152.png,assets/media/gifs/m152.gif
+m153,Cine,Superhéroes multiversales,MARATÓN,Un capítulo más,assets/media/images/m153.png,assets/media/gifs/m153.gif
+m154,Cine,Superhéroes multiversales,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m154.png,assets/media/gifs/m154.gif
+m155,Cine,Superhéroes multiversales,SUBE DE NIVEL,Experiencia +100,assets/media/images/m155.png,assets/media/gifs/m155.gif
+m156,Cine,Superhéroes multiversales,MISIÓN ACEPTADA,Forma la party,assets/media/images/m156.png,assets/media/gifs/m156.gif
+m157,Cine,Superhéroes multiversales,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m157.png,assets/media/gifs/m157.gif
+m158,Cine,Superhéroes multiversales,PLOT TWIST,No me lo esperaba,assets/media/images/m158.png,assets/media/gifs/m158.gif
+m159,Cine,Superhéroes multiversales,FANDOM ON,Modo comunidad,assets/media/images/m159.png,assets/media/gifs/m159.gif
+m160,Cine,Superhéroes multiversales,MODO LEYENDA,Final desbloqueado,assets/media/images/m160.png,assets/media/gifs/m160.gif
+m161,Cine,Mechas gigantes,PLANAZO,Hoy se sale,assets/media/images/m161.png,assets/media/gifs/m161.gif
+m162,Cine,Mechas gigantes,SIN SPOILERS,Promesa de honor,assets/media/images/m162.png,assets/media/gifs/m162.gif
+m163,Cine,Mechas gigantes,MARATÓN,Un capítulo más,assets/media/images/m163.png,assets/media/gifs/m163.gif
+m164,Cine,Mechas gigantes,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m164.png,assets/media/gifs/m164.gif
+m165,Cine,Mechas gigantes,SUBE DE NIVEL,Experiencia +100,assets/media/images/m165.png,assets/media/gifs/m165.gif
+m166,Cine,Mechas gigantes,MISIÓN ACEPTADA,Forma la party,assets/media/images/m166.png,assets/media/gifs/m166.gif
+m167,Cine,Mechas gigantes,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m167.png,assets/media/gifs/m167.gif
+m168,Cine,Mechas gigantes,PLOT TWIST,No me lo esperaba,assets/media/images/m168.png,assets/media/gifs/m168.gif
+m169,Cine,Mechas gigantes,FANDOM ON,Modo comunidad,assets/media/images/m169.png,assets/media/gifs/m169.gif
+m170,Cine,Mechas gigantes,MODO LEYENDA,Final desbloqueado,assets/media/images/m170.png,assets/media/gifs/m170.gif
+m171,Cine,Noir futurista,PLANAZO,Hoy se sale,assets/media/images/m171.png,assets/media/gifs/m171.gif
+m172,Cine,Noir futurista,SIN SPOILERS,Promesa de honor,assets/media/images/m172.png,assets/media/gifs/m172.gif
+m173,Cine,Noir futurista,MARATÓN,Un capítulo más,assets/media/images/m173.png,assets/media/gifs/m173.gif
+m174,Cine,Noir futurista,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m174.png,assets/media/gifs/m174.gif
+m175,Cine,Noir futurista,SUBE DE NIVEL,Experiencia +100,assets/media/images/m175.png,assets/media/gifs/m175.gif
+m176,Cine,Noir futurista,MISIÓN ACEPTADA,Forma la party,assets/media/images/m176.png,assets/media/gifs/m176.gif
+m177,Cine,Noir futurista,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m177.png,assets/media/gifs/m177.gif
+m178,Cine,Noir futurista,PLOT TWIST,No me lo esperaba,assets/media/images/m178.png,assets/media/gifs/m178.gif
+m179,Cine,Noir futurista,FANDOM ON,Modo comunidad,assets/media/images/m179.png,assets/media/gifs/m179.gif
+m180,Cine,Noir futurista,MODO LEYENDA,Final desbloqueado,assets/media/images/m180.png,assets/media/gifs/m180.gif
+m181,Cine,Terror cósmico,PLANAZO,Hoy se sale,assets/media/images/m181.png,assets/media/gifs/m181.gif
+m182,Cine,Terror cósmico,SIN SPOILERS,Promesa de honor,assets/media/images/m182.png,assets/media/gifs/m182.gif
+m183,Cine,Terror cósmico,MARATÓN,Un capítulo más,assets/media/images/m183.png,assets/media/gifs/m183.gif
+m184,Cine,Terror cósmico,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m184.png,assets/media/gifs/m184.gif
+m185,Cine,Terror cósmico,SUBE DE NIVEL,Experiencia +100,assets/media/images/m185.png,assets/media/gifs/m185.gif
+m186,Cine,Terror cósmico,MISIÓN ACEPTADA,Forma la party,assets/media/images/m186.png,assets/media/gifs/m186.gif
+m187,Cine,Terror cósmico,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m187.png,assets/media/gifs/m187.gif
+m188,Cine,Terror cósmico,PLOT TWIST,No me lo esperaba,assets/media/images/m188.png,assets/media/gifs/m188.gif
+m189,Cine,Terror cósmico,FANDOM ON,Modo comunidad,assets/media/images/m189.png,assets/media/gifs/m189.gif
+m190,Cine,Terror cósmico,MODO LEYENDA,Final desbloqueado,assets/media/images/m190.png,assets/media/gifs/m190.gif
+m191,Cine,Mutantes y poderes,PLANAZO,Hoy se sale,assets/media/images/m191.png,assets/media/gifs/m191.gif
+m192,Cine,Mutantes y poderes,SIN SPOILERS,Promesa de honor,assets/media/images/m192.png,assets/media/gifs/m192.gif
+m193,Cine,Mutantes y poderes,MARATÓN,Un capítulo más,assets/media/images/m193.png,assets/media/gifs/m193.gif
+m194,Cine,Mutantes y poderes,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m194.png,assets/media/gifs/m194.gif
+m195,Cine,Mutantes y poderes,SUBE DE NIVEL,Experiencia +100,assets/media/images/m195.png,assets/media/gifs/m195.gif
+m196,Cine,Mutantes y poderes,MISIÓN ACEPTADA,Forma la party,assets/media/images/m196.png,assets/media/gifs/m196.gif
+m197,Cine,Mutantes y poderes,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m197.png,assets/media/gifs/m197.gif
+m198,Cine,Mutantes y poderes,PLOT TWIST,No me lo esperaba,assets/media/images/m198.png,assets/media/gifs/m198.gif
+m199,Cine,Mutantes y poderes,FANDOM ON,Modo comunidad,assets/media/images/m199.png,assets/media/gifs/m199.gif
+m200,Cine,Mutantes y poderes,MODO LEYENDA,Final desbloqueado,assets/media/images/m200.png,assets/media/gifs/m200.gif
+m201,Cine,Mundos postapocalípticos,PLANAZO,Hoy se sale,assets/media/images/m201.png,assets/media/gifs/m201.gif
+m202,Cine,Mundos postapocalípticos,SIN SPOILERS,Promesa de honor,assets/media/images/m202.png,assets/media/gifs/m202.gif
+m203,Cine,Mundos postapocalípticos,MARATÓN,Un capítulo más,assets/media/images/m203.png,assets/media/gifs/m203.gif
+m204,Cine,Mundos postapocalípticos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m204.png,assets/media/gifs/m204.gif
+m205,Cine,Mundos postapocalípticos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m205.png,assets/media/gifs/m205.gif
+m206,Cine,Mundos postapocalípticos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m206.png,assets/media/gifs/m206.gif
+m207,Cine,Mundos postapocalípticos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m207.png,assets/media/gifs/m207.gif
+m208,Cine,Mundos postapocalípticos,PLOT TWIST,No me lo esperaba,assets/media/images/m208.png,assets/media/gifs/m208.gif
+m209,Cine,Mundos postapocalípticos,FANDOM ON,Modo comunidad,assets/media/images/m209.png,assets/media/gifs/m209.gif
+m210,Cine,Mundos postapocalípticos,MODO LEYENDA,Final desbloqueado,assets/media/images/m210.png,assets/media/gifs/m210.gif
+m211,Cine,Criaturas del bosque,PLANAZO,Hoy se sale,assets/media/images/m211.png,assets/media/gifs/m211.gif
+m212,Cine,Criaturas del bosque,SIN SPOILERS,Promesa de honor,assets/media/images/m212.png,assets/media/gifs/m212.gif
+m213,Cine,Criaturas del bosque,MARATÓN,Un capítulo más,assets/media/images/m213.png,assets/media/gifs/m213.gif
+m214,Cine,Criaturas del bosque,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m214.png,assets/media/gifs/m214.gif
+m215,Cine,Criaturas del bosque,SUBE DE NIVEL,Experiencia +100,assets/media/images/m215.png,assets/media/gifs/m215.gif
+m216,Cine,Criaturas del bosque,MISIÓN ACEPTADA,Forma la party,assets/media/images/m216.png,assets/media/gifs/m216.gif
+m217,Cine,Criaturas del bosque,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m217.png,assets/media/gifs/m217.gif
+m218,Cine,Criaturas del bosque,PLOT TWIST,No me lo esperaba,assets/media/images/m218.png,assets/media/gifs/m218.gif
+m219,Cine,Criaturas del bosque,FANDOM ON,Modo comunidad,assets/media/images/m219.png,assets/media/gifs/m219.gif
+m220,Cine,Criaturas del bosque,MODO LEYENDA,Final desbloqueado,assets/media/images/m220.png,assets/media/gifs/m220.gif
+m221,Cine,Hechicería urbana,PLANAZO,Hoy se sale,assets/media/images/m221.png,assets/media/gifs/m221.gif
+m222,Cine,Hechicería urbana,SIN SPOILERS,Promesa de honor,assets/media/images/m222.png,assets/media/gifs/m222.gif
+m223,Cine,Hechicería urbana,MARATÓN,Un capítulo más,assets/media/images/m223.png,assets/media/gifs/m223.gif
+m224,Cine,Hechicería urbana,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m224.png,assets/media/gifs/m224.gif
+m225,Cine,Hechicería urbana,SUBE DE NIVEL,Experiencia +100,assets/media/images/m225.png,assets/media/gifs/m225.gif
+m226,Cine,Hechicería urbana,MISIÓN ACEPTADA,Forma la party,assets/media/images/m226.png,assets/media/gifs/m226.gif
+m227,Cine,Hechicería urbana,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m227.png,assets/media/gifs/m227.gif
+m228,Cine,Hechicería urbana,PLOT TWIST,No me lo esperaba,assets/media/images/m228.png,assets/media/gifs/m228.gif
+m229,Cine,Hechicería urbana,FANDOM ON,Modo comunidad,assets/media/images/m229.png,assets/media/gifs/m229.gif
+m230,Cine,Hechicería urbana,MODO LEYENDA,Final desbloqueado,assets/media/images/m230.png,assets/media/gifs/m230.gif
+m231,Cine,Misterio paranormal,PLANAZO,Hoy se sale,assets/media/images/m231.png,assets/media/gifs/m231.gif
+m232,Cine,Misterio paranormal,SIN SPOILERS,Promesa de honor,assets/media/images/m232.png,assets/media/gifs/m232.gif
+m233,Cine,Misterio paranormal,MARATÓN,Un capítulo más,assets/media/images/m233.png,assets/media/gifs/m233.gif
+m234,Cine,Misterio paranormal,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m234.png,assets/media/gifs/m234.gif
+m235,Cine,Misterio paranormal,SUBE DE NIVEL,Experiencia +100,assets/media/images/m235.png,assets/media/gifs/m235.gif
+m236,Cine,Misterio paranormal,MISIÓN ACEPTADA,Forma la party,assets/media/images/m236.png,assets/media/gifs/m236.gif
+m237,Cine,Misterio paranormal,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m237.png,assets/media/gifs/m237.gif
+m238,Cine,Misterio paranormal,PLOT TWIST,No me lo esperaba,assets/media/images/m238.png,assets/media/gifs/m238.gif
+m239,Cine,Misterio paranormal,FANDOM ON,Modo comunidad,assets/media/images/m239.png,assets/media/gifs/m239.gif
+m240,Cine,Misterio paranormal,MODO LEYENDA,Final desbloqueado,assets/media/images/m240.png,assets/media/gifs/m240.gif
+m241,Cine,Videojuego cinematográfico,PLANAZO,Hoy se sale,assets/media/images/m241.png,assets/media/gifs/m241.gif
+m242,Cine,Videojuego cinematográfico,SIN SPOILERS,Promesa de honor,assets/media/images/m242.png,assets/media/gifs/m242.gif
+m243,Cine,Videojuego cinematográfico,MARATÓN,Un capítulo más,assets/media/images/m243.png,assets/media/gifs/m243.gif
+m244,Cine,Videojuego cinematográfico,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m244.png,assets/media/gifs/m244.gif
+m245,Cine,Videojuego cinematográfico,SUBE DE NIVEL,Experiencia +100,assets/media/images/m245.png,assets/media/gifs/m245.gif
+m246,Cine,Videojuego cinematográfico,MISIÓN ACEPTADA,Forma la party,assets/media/images/m246.png,assets/media/gifs/m246.gif
+m247,Cine,Videojuego cinematográfico,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m247.png,assets/media/gifs/m247.gif
+m248,Cine,Videojuego cinematográfico,PLOT TWIST,No me lo esperaba,assets/media/images/m248.png,assets/media/gifs/m248.gif
+m249,Cine,Videojuego cinematográfico,FANDOM ON,Modo comunidad,assets/media/images/m249.png,assets/media/gifs/m249.gif
+m250,Cine,Videojuego cinematográfico,MODO LEYENDA,Final desbloqueado,assets/media/images/m250.png,assets/media/gifs/m250.gif
+m251,Series,Tripulación estelar,PLANAZO,Hoy se sale,assets/media/images/m251.png,assets/media/gifs/m251.gif
+m252,Series,Tripulación estelar,SIN SPOILERS,Promesa de honor,assets/media/images/m252.png,assets/media/gifs/m252.gif
+m253,Series,Tripulación estelar,MARATÓN,Un capítulo más,assets/media/images/m253.png,assets/media/gifs/m253.gif
+m254,Series,Tripulación estelar,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m254.png,assets/media/gifs/m254.gif
+m255,Series,Tripulación estelar,SUBE DE NIVEL,Experiencia +100,assets/media/images/m255.png,assets/media/gifs/m255.gif
+m256,Series,Tripulación estelar,MISIÓN ACEPTADA,Forma la party,assets/media/images/m256.png,assets/media/gifs/m256.gif
+m257,Series,Tripulación estelar,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m257.png,assets/media/gifs/m257.gif
+m258,Series,Tripulación estelar,PLOT TWIST,No me lo esperaba,assets/media/images/m258.png,assets/media/gifs/m258.gif
+m259,Series,Tripulación estelar,FANDOM ON,Modo comunidad,assets/media/images/m259.png,assets/media/gifs/m259.gif
+m260,Series,Tripulación estelar,MODO LEYENDA,Final desbloqueado,assets/media/images/m260.png,assets/media/gifs/m260.gif
+m261,Series,Misterios ochenteros,PLANAZO,Hoy se sale,assets/media/images/m261.png,assets/media/gifs/m261.gif
+m262,Series,Misterios ochenteros,SIN SPOILERS,Promesa de honor,assets/media/images/m262.png,assets/media/gifs/m262.gif
+m263,Series,Misterios ochenteros,MARATÓN,Un capítulo más,assets/media/images/m263.png,assets/media/gifs/m263.gif
+m264,Series,Misterios ochenteros,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m264.png,assets/media/gifs/m264.gif
+m265,Series,Misterios ochenteros,SUBE DE NIVEL,Experiencia +100,assets/media/images/m265.png,assets/media/gifs/m265.gif
+m266,Series,Misterios ochenteros,MISIÓN ACEPTADA,Forma la party,assets/media/images/m266.png,assets/media/gifs/m266.gif
+m267,Series,Misterios ochenteros,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m267.png,assets/media/gifs/m267.gif
+m268,Series,Misterios ochenteros,PLOT TWIST,No me lo esperaba,assets/media/images/m268.png,assets/media/gifs/m268.gif
+m269,Series,Misterios ochenteros,FANDOM ON,Modo comunidad,assets/media/images/m269.png,assets/media/gifs/m269.gif
+m270,Series,Misterios ochenteros,MODO LEYENDA,Final desbloqueado,assets/media/images/m270.png,assets/media/gifs/m270.gif
+m271,Series,Reinos en guerra,PLANAZO,Hoy se sale,assets/media/images/m271.png,assets/media/gifs/m271.gif
+m272,Series,Reinos en guerra,SIN SPOILERS,Promesa de honor,assets/media/images/m272.png,assets/media/gifs/m272.gif
+m273,Series,Reinos en guerra,MARATÓN,Un capítulo más,assets/media/images/m273.png,assets/media/gifs/m273.gif
+m274,Series,Reinos en guerra,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m274.png,assets/media/gifs/m274.gif
+m275,Series,Reinos en guerra,SUBE DE NIVEL,Experiencia +100,assets/media/images/m275.png,assets/media/gifs/m275.gif
+m276,Series,Reinos en guerra,MISIÓN ACEPTADA,Forma la party,assets/media/images/m276.png,assets/media/gifs/m276.gif
+m277,Series,Reinos en guerra,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m277.png,assets/media/gifs/m277.gif
+m278,Series,Reinos en guerra,PLOT TWIST,No me lo esperaba,assets/media/images/m278.png,assets/media/gifs/m278.gif
+m279,Series,Reinos en guerra,FANDOM ON,Modo comunidad,assets/media/images/m279.png,assets/media/gifs/m279.gif
+m280,Series,Reinos en guerra,MODO LEYENDA,Final desbloqueado,assets/media/images/m280.png,assets/media/gifs/m280.gif
+m281,Series,Oficina paranormal,PLANAZO,Hoy se sale,assets/media/images/m281.png,assets/media/gifs/m281.gif
+m282,Series,Oficina paranormal,SIN SPOILERS,Promesa de honor,assets/media/images/m282.png,assets/media/gifs/m282.gif
+m283,Series,Oficina paranormal,MARATÓN,Un capítulo más,assets/media/images/m283.png,assets/media/gifs/m283.gif
+m284,Series,Oficina paranormal,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m284.png,assets/media/gifs/m284.gif
+m285,Series,Oficina paranormal,SUBE DE NIVEL,Experiencia +100,assets/media/images/m285.png,assets/media/gifs/m285.gif
+m286,Series,Oficina paranormal,MISIÓN ACEPTADA,Forma la party,assets/media/images/m286.png,assets/media/gifs/m286.gif
+m287,Series,Oficina paranormal,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m287.png,assets/media/gifs/m287.gif
+m288,Series,Oficina paranormal,PLOT TWIST,No me lo esperaba,assets/media/images/m288.png,assets/media/gifs/m288.gif
+m289,Series,Oficina paranormal,FANDOM ON,Modo comunidad,assets/media/images/m289.png,assets/media/gifs/m289.gif
+m290,Series,Oficina paranormal,MODO LEYENDA,Final desbloqueado,assets/media/images/m290.png,assets/media/gifs/m290.gif
+m291,Series,Supervivencia distópica,PLANAZO,Hoy se sale,assets/media/images/m291.png,assets/media/gifs/m291.gif
+m292,Series,Supervivencia distópica,SIN SPOILERS,Promesa de honor,assets/media/images/m292.png,assets/media/gifs/m292.gif
+m293,Series,Supervivencia distópica,MARATÓN,Un capítulo más,assets/media/images/m293.png,assets/media/gifs/m293.gif
+m294,Series,Supervivencia distópica,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m294.png,assets/media/gifs/m294.gif
+m295,Series,Supervivencia distópica,SUBE DE NIVEL,Experiencia +100,assets/media/images/m295.png,assets/media/gifs/m295.gif
+m296,Series,Supervivencia distópica,MISIÓN ACEPTADA,Forma la party,assets/media/images/m296.png,assets/media/gifs/m296.gif
+m297,Series,Supervivencia distópica,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m297.png,assets/media/gifs/m297.gif
+m298,Series,Supervivencia distópica,PLOT TWIST,No me lo esperaba,assets/media/images/m298.png,assets/media/gifs/m298.gif
+m299,Series,Supervivencia distópica,FANDOM ON,Modo comunidad,assets/media/images/m299.png,assets/media/gifs/m299.gif
+m300,Series,Supervivencia distópica,MODO LEYENDA,Final desbloqueado,assets/media/images/m300.png,assets/media/gifs/m300.gif
+m301,Series,Detectives sobrenaturales,PLANAZO,Hoy se sale,assets/media/images/m301.png,assets/media/gifs/m301.gif
+m302,Series,Detectives sobrenaturales,SIN SPOILERS,Promesa de honor,assets/media/images/m302.png,assets/media/gifs/m302.gif
+m303,Series,Detectives sobrenaturales,MARATÓN,Un capítulo más,assets/media/images/m303.png,assets/media/gifs/m303.gif
+m304,Series,Detectives sobrenaturales,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m304.png,assets/media/gifs/m304.gif
+m305,Series,Detectives sobrenaturales,SUBE DE NIVEL,Experiencia +100,assets/media/images/m305.png,assets/media/gifs/m305.gif
+m306,Series,Detectives sobrenaturales,MISIÓN ACEPTADA,Forma la party,assets/media/images/m306.png,assets/media/gifs/m306.gif
+m307,Series,Detectives sobrenaturales,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m307.png,assets/media/gifs/m307.gif
+m308,Series,Detectives sobrenaturales,PLOT TWIST,No me lo esperaba,assets/media/images/m308.png,assets/media/gifs/m308.gif
+m309,Series,Detectives sobrenaturales,FANDOM ON,Modo comunidad,assets/media/images/m309.png,assets/media/gifs/m309.gif
+m310,Series,Detectives sobrenaturales,MODO LEYENDA,Final desbloqueado,assets/media/images/m310.png,assets/media/gifs/m310.gif
+m311,Series,Héroes disfuncionales,PLANAZO,Hoy se sale,assets/media/images/m311.png,assets/media/gifs/m311.gif
+m312,Series,Héroes disfuncionales,SIN SPOILERS,Promesa de honor,assets/media/images/m312.png,assets/media/gifs/m312.gif
+m313,Series,Héroes disfuncionales,MARATÓN,Un capítulo más,assets/media/images/m313.png,assets/media/gifs/m313.gif
+m314,Series,Héroes disfuncionales,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m314.png,assets/media/gifs/m314.gif
+m315,Series,Héroes disfuncionales,SUBE DE NIVEL,Experiencia +100,assets/media/images/m315.png,assets/media/gifs/m315.gif
+m316,Series,Héroes disfuncionales,MISIÓN ACEPTADA,Forma la party,assets/media/images/m316.png,assets/media/gifs/m316.gif
+m317,Series,Héroes disfuncionales,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m317.png,assets/media/gifs/m317.gif
+m318,Series,Héroes disfuncionales,PLOT TWIST,No me lo esperaba,assets/media/images/m318.png,assets/media/gifs/m318.gif
+m319,Series,Héroes disfuncionales,FANDOM ON,Modo comunidad,assets/media/images/m319.png,assets/media/gifs/m319.gif
+m320,Series,Héroes disfuncionales,MODO LEYENDA,Final desbloqueado,assets/media/images/m320.png,assets/media/gifs/m320.gif
+m321,Series,Parque de androides,PLANAZO,Hoy se sale,assets/media/images/m321.png,assets/media/gifs/m321.gif
+m322,Series,Parque de androides,SIN SPOILERS,Promesa de honor,assets/media/images/m322.png,assets/media/gifs/m322.gif
+m323,Series,Parque de androides,MARATÓN,Un capítulo más,assets/media/images/m323.png,assets/media/gifs/m323.gif
+m324,Series,Parque de androides,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m324.png,assets/media/gifs/m324.gif
+m325,Series,Parque de androides,SUBE DE NIVEL,Experiencia +100,assets/media/images/m325.png,assets/media/gifs/m325.gif
+m326,Series,Parque de androides,MISIÓN ACEPTADA,Forma la party,assets/media/images/m326.png,assets/media/gifs/m326.gif
+m327,Series,Parque de androides,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m327.png,assets/media/gifs/m327.gif
+m328,Series,Parque de androides,PLOT TWIST,No me lo esperaba,assets/media/images/m328.png,assets/media/gifs/m328.gif
+m329,Series,Parque de androides,FANDOM ON,Modo comunidad,assets/media/images/m329.png,assets/media/gifs/m329.gif
+m330,Series,Parque de androides,MODO LEYENDA,Final desbloqueado,assets/media/images/m330.png,assets/media/gifs/m330.gif
+m331,Series,Hackers clandestinos,PLANAZO,Hoy se sale,assets/media/images/m331.png,assets/media/gifs/m331.gif
+m332,Series,Hackers clandestinos,SIN SPOILERS,Promesa de honor,assets/media/images/m332.png,assets/media/gifs/m332.gif
+m333,Series,Hackers clandestinos,MARATÓN,Un capítulo más,assets/media/images/m333.png,assets/media/gifs/m333.gif
+m334,Series,Hackers clandestinos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m334.png,assets/media/gifs/m334.gif
+m335,Series,Hackers clandestinos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m335.png,assets/media/gifs/m335.gif
+m336,Series,Hackers clandestinos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m336.png,assets/media/gifs/m336.gif
+m337,Series,Hackers clandestinos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m337.png,assets/media/gifs/m337.gif
+m338,Series,Hackers clandestinos,PLOT TWIST,No me lo esperaba,assets/media/images/m338.png,assets/media/gifs/m338.gif
+m339,Series,Hackers clandestinos,FANDOM ON,Modo comunidad,assets/media/images/m339.png,assets/media/gifs/m339.gif
+m340,Series,Hackers clandestinos,MODO LEYENDA,Final desbloqueado,assets/media/images/m340.png,assets/media/gifs/m340.gif
+m341,Series,Cazadores de monstruos,PLANAZO,Hoy se sale,assets/media/images/m341.png,assets/media/gifs/m341.gif
+m342,Series,Cazadores de monstruos,SIN SPOILERS,Promesa de honor,assets/media/images/m342.png,assets/media/gifs/m342.gif
+m343,Series,Cazadores de monstruos,MARATÓN,Un capítulo más,assets/media/images/m343.png,assets/media/gifs/m343.gif
+m344,Series,Cazadores de monstruos,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m344.png,assets/media/gifs/m344.gif
+m345,Series,Cazadores de monstruos,SUBE DE NIVEL,Experiencia +100,assets/media/images/m345.png,assets/media/gifs/m345.gif
+m346,Series,Cazadores de monstruos,MISIÓN ACEPTADA,Forma la party,assets/media/images/m346.png,assets/media/gifs/m346.gif
+m347,Series,Cazadores de monstruos,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m347.png,assets/media/gifs/m347.gif
+m348,Series,Cazadores de monstruos,PLOT TWIST,No me lo esperaba,assets/media/images/m348.png,assets/media/gifs/m348.gif
+m349,Series,Cazadores de monstruos,FANDOM ON,Modo comunidad,assets/media/images/m349.png,assets/media/gifs/m349.gif
+m350,Series,Cazadores de monstruos,MODO LEYENDA,Final desbloqueado,assets/media/images/m350.png,assets/media/gifs/m350.gif
+m351,Series,Animación multiversal,PLANAZO,Hoy se sale,assets/media/images/m351.png,assets/media/gifs/m351.gif
+m352,Series,Animación multiversal,SIN SPOILERS,Promesa de honor,assets/media/images/m352.png,assets/media/gifs/m352.gif
+m353,Series,Animación multiversal,MARATÓN,Un capítulo más,assets/media/images/m353.png,assets/media/gifs/m353.gif
+m354,Series,Animación multiversal,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m354.png,assets/media/gifs/m354.gif
+m355,Series,Animación multiversal,SUBE DE NIVEL,Experiencia +100,assets/media/images/m355.png,assets/media/gifs/m355.gif
+m356,Series,Animación multiversal,MISIÓN ACEPTADA,Forma la party,assets/media/images/m356.png,assets/media/gifs/m356.gif
+m357,Series,Animación multiversal,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m357.png,assets/media/gifs/m357.gif
+m358,Series,Animación multiversal,PLOT TWIST,No me lo esperaba,assets/media/images/m358.png,assets/media/gifs/m358.gif
+m359,Series,Animación multiversal,FANDOM ON,Modo comunidad,assets/media/images/m359.png,assets/media/gifs/m359.gif
+m360,Series,Animación multiversal,MODO LEYENDA,Final desbloqueado,assets/media/images/m360.png,assets/media/gifs/m360.gif
+m361,Series,Academia de héroes,PLANAZO,Hoy se sale,assets/media/images/m361.png,assets/media/gifs/m361.gif
+m362,Series,Academia de héroes,SIN SPOILERS,Promesa de honor,assets/media/images/m362.png,assets/media/gifs/m362.gif
+m363,Series,Academia de héroes,MARATÓN,Un capítulo más,assets/media/images/m363.png,assets/media/gifs/m363.gif
+m364,Series,Academia de héroes,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m364.png,assets/media/gifs/m364.gif
+m365,Series,Academia de héroes,SUBE DE NIVEL,Experiencia +100,assets/media/images/m365.png,assets/media/gifs/m365.gif
+m366,Series,Academia de héroes,MISIÓN ACEPTADA,Forma la party,assets/media/images/m366.png,assets/media/gifs/m366.gif
+m367,Series,Academia de héroes,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m367.png,assets/media/gifs/m367.gif
+m368,Series,Academia de héroes,PLOT TWIST,No me lo esperaba,assets/media/images/m368.png,assets/media/gifs/m368.gif
+m369,Series,Academia de héroes,FANDOM ON,Modo comunidad,assets/media/images/m369.png,assets/media/gifs/m369.gif
+m370,Series,Academia de héroes,MODO LEYENDA,Final desbloqueado,assets/media/images/m370.png,assets/media/gifs/m370.gif
+m371,Series,Imperio galáctico,PLANAZO,Hoy se sale,assets/media/images/m371.png,assets/media/gifs/m371.gif
+m372,Series,Imperio galáctico,SIN SPOILERS,Promesa de honor,assets/media/images/m372.png,assets/media/gifs/m372.gif
+m373,Series,Imperio galáctico,MARATÓN,Un capítulo más,assets/media/images/m373.png,assets/media/gifs/m373.gif
+m374,Series,Imperio galáctico,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m374.png,assets/media/gifs/m374.gif
+m375,Series,Imperio galáctico,SUBE DE NIVEL,Experiencia +100,assets/media/images/m375.png,assets/media/gifs/m375.gif
+m376,Series,Imperio galáctico,MISIÓN ACEPTADA,Forma la party,assets/media/images/m376.png,assets/media/gifs/m376.gif
+m377,Series,Imperio galáctico,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m377.png,assets/media/gifs/m377.gif
+m378,Series,Imperio galáctico,PLOT TWIST,No me lo esperaba,assets/media/images/m378.png,assets/media/gifs/m378.gif
+m379,Series,Imperio galáctico,FANDOM ON,Modo comunidad,assets/media/images/m379.png,assets/media/gifs/m379.gif
+m380,Series,Imperio galáctico,MODO LEYENDA,Final desbloqueado,assets/media/images/m380.png,assets/media/gifs/m380.gif
+m381,Series,Misterio de pueblo,PLANAZO,Hoy se sale,assets/media/images/m381.png,assets/media/gifs/m381.gif
+m382,Series,Misterio de pueblo,SIN SPOILERS,Promesa de honor,assets/media/images/m382.png,assets/media/gifs/m382.gif
+m383,Series,Misterio de pueblo,MARATÓN,Un capítulo más,assets/media/images/m383.png,assets/media/gifs/m383.gif
+m384,Series,Misterio de pueblo,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m384.png,assets/media/gifs/m384.gif
+m385,Series,Misterio de pueblo,SUBE DE NIVEL,Experiencia +100,assets/media/images/m385.png,assets/media/gifs/m385.gif
+m386,Series,Misterio de pueblo,MISIÓN ACEPTADA,Forma la party,assets/media/images/m386.png,assets/media/gifs/m386.gif
+m387,Series,Misterio de pueblo,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m387.png,assets/media/gifs/m387.gif
+m388,Series,Misterio de pueblo,PLOT TWIST,No me lo esperaba,assets/media/images/m388.png,assets/media/gifs/m388.gif
+m389,Series,Misterio de pueblo,FANDOM ON,Modo comunidad,assets/media/images/m389.png,assets/media/gifs/m389.gif
+m390,Series,Misterio de pueblo,MODO LEYENDA,Final desbloqueado,assets/media/images/m390.png,assets/media/gifs/m390.gif
+m391,Series,Brujas contemporáneas,PLANAZO,Hoy se sale,assets/media/images/m391.png,assets/media/gifs/m391.gif
+m392,Series,Brujas contemporáneas,SIN SPOILERS,Promesa de honor,assets/media/images/m392.png,assets/media/gifs/m392.gif
+m393,Series,Brujas contemporáneas,MARATÓN,Un capítulo más,assets/media/images/m393.png,assets/media/gifs/m393.gif
+m394,Series,Brujas contemporáneas,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m394.png,assets/media/gifs/m394.gif
+m395,Series,Brujas contemporáneas,SUBE DE NIVEL,Experiencia +100,assets/media/images/m395.png,assets/media/gifs/m395.gif
+m396,Series,Brujas contemporáneas,MISIÓN ACEPTADA,Forma la party,assets/media/images/m396.png,assets/media/gifs/m396.gif
+m397,Series,Brujas contemporáneas,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m397.png,assets/media/gifs/m397.gif
+m398,Series,Brujas contemporáneas,PLOT TWIST,No me lo esperaba,assets/media/images/m398.png,assets/media/gifs/m398.gif
+m399,Series,Brujas contemporáneas,FANDOM ON,Modo comunidad,assets/media/images/m399.png,assets/media/gifs/m399.gif
+m400,Series,Brujas contemporáneas,MODO LEYENDA,Final desbloqueado,assets/media/images/m400.png,assets/media/gifs/m400.gif
+m401,Series,Samuráis del futuro,PLANAZO,Hoy se sale,assets/media/images/m401.png,assets/media/gifs/m401.gif
+m402,Series,Samuráis del futuro,SIN SPOILERS,Promesa de honor,assets/media/images/m402.png,assets/media/gifs/m402.gif
+m403,Series,Samuráis del futuro,MARATÓN,Un capítulo más,assets/media/images/m403.png,assets/media/gifs/m403.gif
+m404,Series,Samuráis del futuro,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m404.png,assets/media/gifs/m404.gif
+m405,Series,Samuráis del futuro,SUBE DE NIVEL,Experiencia +100,assets/media/images/m405.png,assets/media/gifs/m405.gif
+m406,Series,Samuráis del futuro,MISIÓN ACEPTADA,Forma la party,assets/media/images/m406.png,assets/media/gifs/m406.gif
+m407,Series,Samuráis del futuro,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m407.png,assets/media/gifs/m407.gif
+m408,Series,Samuráis del futuro,PLOT TWIST,No me lo esperaba,assets/media/images/m408.png,assets/media/gifs/m408.gif
+m409,Series,Samuráis del futuro,FANDOM ON,Modo comunidad,assets/media/images/m409.png,assets/media/gifs/m409.gif
+m410,Series,Samuráis del futuro,MODO LEYENDA,Final desbloqueado,assets/media/images/m410.png,assets/media/gifs/m410.gif
+m411,Series,Ciencia imposible,PLANAZO,Hoy se sale,assets/media/images/m411.png,assets/media/gifs/m411.gif
+m412,Series,Ciencia imposible,SIN SPOILERS,Promesa de honor,assets/media/images/m412.png,assets/media/gifs/m412.gif
+m413,Series,Ciencia imposible,MARATÓN,Un capítulo más,assets/media/images/m413.png,assets/media/gifs/m413.gif
+m414,Series,Ciencia imposible,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m414.png,assets/media/gifs/m414.gif
+m415,Series,Ciencia imposible,SUBE DE NIVEL,Experiencia +100,assets/media/images/m415.png,assets/media/gifs/m415.gif
+m416,Series,Ciencia imposible,MISIÓN ACEPTADA,Forma la party,assets/media/images/m416.png,assets/media/gifs/m416.gif
+m417,Series,Ciencia imposible,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m417.png,assets/media/gifs/m417.gif
+m418,Series,Ciencia imposible,PLOT TWIST,No me lo esperaba,assets/media/images/m418.png,assets/media/gifs/m418.gif
+m419,Series,Ciencia imposible,FANDOM ON,Modo comunidad,assets/media/images/m419.png,assets/media/gifs/m419.gif
+m420,Series,Ciencia imposible,MODO LEYENDA,Final desbloqueado,assets/media/images/m420.png,assets/media/gifs/m420.gif
+m421,Series,Familia monstruosa,PLANAZO,Hoy se sale,assets/media/images/m421.png,assets/media/gifs/m421.gif
+m422,Series,Familia monstruosa,SIN SPOILERS,Promesa de honor,assets/media/images/m422.png,assets/media/gifs/m422.gif
+m423,Series,Familia monstruosa,MARATÓN,Un capítulo más,assets/media/images/m423.png,assets/media/gifs/m423.gif
+m424,Series,Familia monstruosa,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m424.png,assets/media/gifs/m424.gif
+m425,Series,Familia monstruosa,SUBE DE NIVEL,Experiencia +100,assets/media/images/m425.png,assets/media/gifs/m425.gif
+m426,Series,Familia monstruosa,MISIÓN ACEPTADA,Forma la party,assets/media/images/m426.png,assets/media/gifs/m426.gif
+m427,Series,Familia monstruosa,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m427.png,assets/media/gifs/m427.gif
+m428,Series,Familia monstruosa,PLOT TWIST,No me lo esperaba,assets/media/images/m428.png,assets/media/gifs/m428.gif
+m429,Series,Familia monstruosa,FANDOM ON,Modo comunidad,assets/media/images/m429.png,assets/media/gifs/m429.gif
+m430,Series,Familia monstruosa,MODO LEYENDA,Final desbloqueado,assets/media/images/m430.png,assets/media/gifs/m430.gif
+m431,Series,Exploradores del tiempo,PLANAZO,Hoy se sale,assets/media/images/m431.png,assets/media/gifs/m431.gif
+m432,Series,Exploradores del tiempo,SIN SPOILERS,Promesa de honor,assets/media/images/m432.png,assets/media/gifs/m432.gif
+m433,Series,Exploradores del tiempo,MARATÓN,Un capítulo más,assets/media/images/m433.png,assets/media/gifs/m433.gif
+m434,Series,Exploradores del tiempo,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m434.png,assets/media/gifs/m434.gif
+m435,Series,Exploradores del tiempo,SUBE DE NIVEL,Experiencia +100,assets/media/images/m435.png,assets/media/gifs/m435.gif
+m436,Series,Exploradores del tiempo,MISIÓN ACEPTADA,Forma la party,assets/media/images/m436.png,assets/media/gifs/m436.gif
+m437,Series,Exploradores del tiempo,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m437.png,assets/media/gifs/m437.gif
+m438,Series,Exploradores del tiempo,PLOT TWIST,No me lo esperaba,assets/media/images/m438.png,assets/media/gifs/m438.gif
+m439,Series,Exploradores del tiempo,FANDOM ON,Modo comunidad,assets/media/images/m439.png,assets/media/gifs/m439.gif
+m440,Series,Exploradores del tiempo,MODO LEYENDA,Final desbloqueado,assets/media/images/m440.png,assets/media/gifs/m440.gif
+m441,Series,Detective androide,PLANAZO,Hoy se sale,assets/media/images/m441.png,assets/media/gifs/m441.gif
+m442,Series,Detective androide,SIN SPOILERS,Promesa de honor,assets/media/images/m442.png,assets/media/gifs/m442.gif
+m443,Series,Detective androide,MARATÓN,Un capítulo más,assets/media/images/m443.png,assets/media/gifs/m443.gif
+m444,Series,Detective androide,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m444.png,assets/media/gifs/m444.gif
+m445,Series,Detective androide,SUBE DE NIVEL,Experiencia +100,assets/media/images/m445.png,assets/media/gifs/m445.gif
+m446,Series,Detective androide,MISIÓN ACEPTADA,Forma la party,assets/media/images/m446.png,assets/media/gifs/m446.gif
+m447,Series,Detective androide,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m447.png,assets/media/gifs/m447.gif
+m448,Series,Detective androide,PLOT TWIST,No me lo esperaba,assets/media/images/m448.png,assets/media/gifs/m448.gif
+m449,Series,Detective androide,FANDOM ON,Modo comunidad,assets/media/images/m449.png,assets/media/gifs/m449.gif
+m450,Series,Detective androide,MODO LEYENDA,Final desbloqueado,assets/media/images/m450.png,assets/media/gifs/m450.gif
+m451,Series,Rebelión de clones,PLANAZO,Hoy se sale,assets/media/images/m451.png,assets/media/gifs/m451.gif
+m452,Series,Rebelión de clones,SIN SPOILERS,Promesa de honor,assets/media/images/m452.png,assets/media/gifs/m452.gif
+m453,Series,Rebelión de clones,MARATÓN,Un capítulo más,assets/media/images/m453.png,assets/media/gifs/m453.gif
+m454,Series,Rebelión de clones,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m454.png,assets/media/gifs/m454.gif
+m455,Series,Rebelión de clones,SUBE DE NIVEL,Experiencia +100,assets/media/images/m455.png,assets/media/gifs/m455.gif
+m456,Series,Rebelión de clones,MISIÓN ACEPTADA,Forma la party,assets/media/images/m456.png,assets/media/gifs/m456.gif
+m457,Series,Rebelión de clones,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m457.png,assets/media/gifs/m457.gif
+m458,Series,Rebelión de clones,PLOT TWIST,No me lo esperaba,assets/media/images/m458.png,assets/media/gifs/m458.gif
+m459,Series,Rebelión de clones,FANDOM ON,Modo comunidad,assets/media/images/m459.png,assets/media/gifs/m459.gif
+m460,Series,Rebelión de clones,MODO LEYENDA,Final desbloqueado,assets/media/images/m460.png,assets/media/gifs/m460.gif
+m461,Series,Comedia espacial,PLANAZO,Hoy se sale,assets/media/images/m461.png,assets/media/gifs/m461.gif
+m462,Series,Comedia espacial,SIN SPOILERS,Promesa de honor,assets/media/images/m462.png,assets/media/gifs/m462.gif
+m463,Series,Comedia espacial,MARATÓN,Un capítulo más,assets/media/images/m463.png,assets/media/gifs/m463.gif
+m464,Series,Comedia espacial,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m464.png,assets/media/gifs/m464.gif
+m465,Series,Comedia espacial,SUBE DE NIVEL,Experiencia +100,assets/media/images/m465.png,assets/media/gifs/m465.gif
+m466,Series,Comedia espacial,MISIÓN ACEPTADA,Forma la party,assets/media/images/m466.png,assets/media/gifs/m466.gif
+m467,Series,Comedia espacial,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m467.png,assets/media/gifs/m467.gif
+m468,Series,Comedia espacial,PLOT TWIST,No me lo esperaba,assets/media/images/m468.png,assets/media/gifs/m468.gif
+m469,Series,Comedia espacial,FANDOM ON,Modo comunidad,assets/media/images/m469.png,assets/media/gifs/m469.gif
+m470,Series,Comedia espacial,MODO LEYENDA,Final desbloqueado,assets/media/images/m470.png,assets/media/gifs/m470.gif
+m471,Series,Dragones y profecías,PLANAZO,Hoy se sale,assets/media/images/m471.png,assets/media/gifs/m471.gif
+m472,Series,Dragones y profecías,SIN SPOILERS,Promesa de honor,assets/media/images/m472.png,assets/media/gifs/m472.gif
+m473,Series,Dragones y profecías,MARATÓN,Un capítulo más,assets/media/images/m473.png,assets/media/gifs/m473.gif
+m474,Series,Dragones y profecías,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m474.png,assets/media/gifs/m474.gif
+m475,Series,Dragones y profecías,SUBE DE NIVEL,Experiencia +100,assets/media/images/m475.png,assets/media/gifs/m475.gif
+m476,Series,Dragones y profecías,MISIÓN ACEPTADA,Forma la party,assets/media/images/m476.png,assets/media/gifs/m476.gif
+m477,Series,Dragones y profecías,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m477.png,assets/media/gifs/m477.gif
+m478,Series,Dragones y profecías,PLOT TWIST,No me lo esperaba,assets/media/images/m478.png,assets/media/gifs/m478.gif
+m479,Series,Dragones y profecías,FANDOM ON,Modo comunidad,assets/media/images/m479.png,assets/media/gifs/m479.gif
+m480,Series,Dragones y profecías,MODO LEYENDA,Final desbloqueado,assets/media/images/m480.png,assets/media/gifs/m480.gif
+m481,Series,Agencia secreta,PLANAZO,Hoy se sale,assets/media/images/m481.png,assets/media/gifs/m481.gif
+m482,Series,Agencia secreta,SIN SPOILERS,Promesa de honor,assets/media/images/m482.png,assets/media/gifs/m482.gif
+m483,Series,Agencia secreta,MARATÓN,Un capítulo más,assets/media/images/m483.png,assets/media/gifs/m483.gif
+m484,Series,Agencia secreta,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m484.png,assets/media/gifs/m484.gif
+m485,Series,Agencia secreta,SUBE DE NIVEL,Experiencia +100,assets/media/images/m485.png,assets/media/gifs/m485.gif
+m486,Series,Agencia secreta,MISIÓN ACEPTADA,Forma la party,assets/media/images/m486.png,assets/media/gifs/m486.gif
+m487,Series,Agencia secreta,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m487.png,assets/media/gifs/m487.gif
+m488,Series,Agencia secreta,PLOT TWIST,No me lo esperaba,assets/media/images/m488.png,assets/media/gifs/m488.gif
+m489,Series,Agencia secreta,FANDOM ON,Modo comunidad,assets/media/images/m489.png,assets/media/gifs/m489.gif
+m490,Series,Agencia secreta,MODO LEYENDA,Final desbloqueado,assets/media/images/m490.png,assets/media/gifs/m490.gif
+m491,Series,Realidad alternativa,PLANAZO,Hoy se sale,assets/media/images/m491.png,assets/media/gifs/m491.gif
+m492,Series,Realidad alternativa,SIN SPOILERS,Promesa de honor,assets/media/images/m492.png,assets/media/gifs/m492.gif
+m493,Series,Realidad alternativa,MARATÓN,Un capítulo más,assets/media/images/m493.png,assets/media/gifs/m493.gif
+m494,Series,Realidad alternativa,EPISODIO ÉPICO,Necesito hablar,assets/media/images/m494.png,assets/media/gifs/m494.gif
+m495,Series,Realidad alternativa,SUBE DE NIVEL,Experiencia +100,assets/media/images/m495.png,assets/media/gifs/m495.gif
+m496,Series,Realidad alternativa,MISIÓN ACEPTADA,Forma la party,assets/media/images/m496.png,assets/media/gifs/m496.gif
+m497,Series,Realidad alternativa,OTRO UNIVERSO,Vuelvo enseguida,assets/media/images/m497.png,assets/media/gifs/m497.gif
+m498,Series,Realidad alternativa,PLOT TWIST,No me lo esperaba,assets/media/images/m498.png,assets/media/gifs/m498.gif
+m499,Series,Realidad alternativa,FANDOM ON,Modo comunidad,assets/media/images/m499.png,assets/media/gifs/m499.gif
+m500,Series,Realidad alternativa,MODO LEYENDA,Final desbloqueado,assets/media/images/m500.png,assets/media/gifs/m500.gif
