@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#17152b">
+  <meta name="description" content="Guía PWA de tiendas, sitios, eventos y stickers frikis de Madrid.">
+  <meta property="og:title" content="FrikiMadrid">
+  <meta property="og:description" content="Tu mapa para una aventura épica por Madrid.">
+  <meta property="og:image" content="assets/social-preview.jpg">
+  <title>FrikiMadrid · Guía geek de Madrid</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app-main">Saltar al contenido</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="FrikiMadrid, inicio">
+      <span class="brand-mark">F</span><span>FRIKI<span class="brand-accent">MADRID</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <button data-view="inicio" class="nav-link active">Inicio</button>
+      <button data-view="explorar" class="nav-link">Explorar</button>
+      <button data-view="eventos" class="nav-link">Eventos</button>
+      <button data-view="rutas" class="nav-link">Rutas</button>
+      <button data-view="stickers" class="nav-link">Stickers</button>
+    </nav>
+    <div class="top-actions">
+      <button id="installBtn" class="icon-btn install-btn" hidden aria-label="Instalar aplicación">↓</button>
+      <button id="favoritesBtn" class="icon-btn" aria-label="Ver favoritos"><span>♥</span><b id="favoriteCount">0</b></button>
+    </div>
+  </header>
+
+  <main id="app-main">
+    <section id="view-inicio" class="view active" data-view-panel="inicio">
+      <div class="hero wrap">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> GUÍA INDEPENDIENTE · MADRID</span>
+          <h1>Tu próxima<br><em>aventura friki</em><br>empieza aquí.</h1>
+          <p>Tiendas de culto, cafés lúdicos, museos, eventos y stickers originales para compartir.</p>
+          <div class="hero-actions">
+            <button class="btn primary" data-go="explorar">Explorar Madrid <span>→</span></button>
+            <button class="btn ghost" data-go="eventos">Ver próximos eventos</button>
+          </div>
+          <div class="trust-row">
+            <span>✓ Fuentes oficiales</span><span>✓ Enlaces a Maps</span><span>✓ Funciona sin conexión</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustración de cultura friki madrileña">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="mascot-card"><img src="assets/stickers/gato-cosmico.gif" alt="Gato cósmico animado"><span>¡MADRID TE ESPERA!</span></div>
+          <div class="float-chip chip-a">🎲 +20 PLANES</div>
+          <div class="float-chip chip-b">🕹️ MODO CO-OP</div>
+          <div class="float-chip chip-c">📍 100% MADRID</div>
+        </div>
+      </div>
+
+      <div class="stats-strip">
+        <div class="wrap stats-grid">
+          <button data-go="explorar" data-filter-type="store"><strong id="storeStat">14</strong><span>Tiendas verificadas</span></button>
+          <button data-go="explorar" data-filter-type="place"><strong id="placeStat">10</strong><span>Sitios para vivirlo</span></button>
+          <button data-go="eventos"><strong id="eventStat">6</strong><span>Eventos en el radar</span></button>
+          <button data-go="stickers"><strong id="stickerStat">6</strong><span>Stickers originales</span></button>
+        </div>
+      </div>
+
+      <section class="wrap section-pad">
+        <div class="section-head"><div><span class="kicker">EMPIEZA POR AQUÍ</span><h2>Elige tu universo</h2></div><button class="text-btn" data-go="explorar">Ver todo →</button></div>
+        <div class="universe-grid" id="universeGrid"></div>
+      </section>
+
+      <section class="dark-section">
+        <div class="wrap split-feature">
+          <div>
+            <span class="kicker light">PRÓXIMA CITA CONFIRMADA</span>
+            <h2 id="nextEventTitle">Japan Weekend Madrid</h2>
+            <p id="nextEventText"></p>
+            <div class="countdown" id="homeCountdown" aria-label="Cuenta atrás"></div>
+            <button class="btn yellow" data-go="eventos">Abrir agenda →</button>
+          </div>
+          <div class="ticket-art" aria-hidden="true"><span>🌸</span><b>LEVEL<br>2027</b><small>MADRID</small></div>
+        </div>
+      </section>
+
+      <section class="wrap section-pad">
+        <div class="section-head"><div><span class="kicker">LO MEJOR DEL MAPA</span><h2>Selección del gremio</h2></div><button class="text-btn" data-go="explorar">Explorar más →</button></div>
+        <div class="card-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="wrap sticker-teaser">
+        <div><span class="kicker">PACK ORIGINAL</span><h2>Frikadas para WhatsApp</h2><p>Descarga PNG, WebP o GIF. En móvil también puedes compartir el archivo directamente.</p><button class="btn primary" data-go="stickers">Abrir el laboratorio →</button></div>
+        <div class="sticker-fan"><img src="assets/stickers/dado-critico.png" alt="Dado crítico"><img src="assets/stickers/robot-amigo.png" alt="Robot amigo"><img src="assets/stickers/corazon-pixel.png" alt="Corazón píxel"></div>
+      </section>
+    </section>
+
+    <section id="view-explorar" class="view" data-view-panel="explorar">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> EXPLORA MADRID</span><h1>Encuentra tu <em>próxima misión.</em></h1><p>Busca por afición, zona o nombre. Guarda favoritos y abre la ruta en Maps.</p></div>
+      <div class="wrap explorer-layout">
+        <aside class="filter-panel" aria-label="Filtros">
+          <div class="filter-title"><b>Filtros</b><button id="clearFilters">Limpiar</button></div>
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="manga, arcade, rol…" autocomplete="off"></label>
+          <fieldset><legend>Tipo</legend><div class="segmented"><button data-kind="all" class="active">Todo</button><button data-kind="store">Tiendas</button><button data-kind="place">Sitios</button></div></fieldset>
+          <fieldset><legend>Universo</legend><div id="tagFilters" class="check-list"></div></fieldset>
+          <fieldset><legend>Zona</legend><select id="zoneFilter"><option value="all">Todas las zonas</option></select></fieldset>
+          <fieldset><legend>Presupuesto</legend><select id="budgetFilter"><option value="all">Cualquiera</option><option value="Gratis">Gratis</option><option value="€">€</option><option value="€€">€€</option><option value="€€€">€€€</option></select></fieldset>
+          <label class="switch-row"><input id="favOnly" type="checkbox"><span></span> Solo favoritos</label>
+          <div class="data-note">Datos revisados el <b>11 nov 2026</b>. Confirma horarios antes de ir.</div>
+        </aside>
+        <div class="results-area">
+          <div class="results-top"><div><strong id="resultCount">0 lugares</strong><span id="resultHint"> en Madrid</span></div><div class="view-toggle"><button class="active" data-display="grid" aria-label="Vista cuadrícula">▦</button><button data-display="list" aria-label="Vista lista">☷</button></div></div>
+          <div id="exploreGrid" class="card-grid"></div>
+          <div id="emptyState" class="empty-state" hidden><span>🛸</span><h3>Nada por este cuadrante</h3><p>Prueba a quitar algún filtro o buscar otra afición.</p><button class="btn primary" id="emptyReset">Reiniciar filtros</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-eventos" class="view" data-view-panel="eventos">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> AGENDA FRIKI</span><h1>Fechas para <em>subir de nivel.</em></h1><p>Confirmados, anunciados y citas en radar. Transparencia antes que hype.</p></div>
+      <div class="wrap event-toolbar"><div class="pills" id="eventFilters"><button class="active" data-event-filter="all">Todo</button><button data-event-filter="confirmado">Confirmados</button><button data-event-filter="anunciado">Anunciados</button><button data-event-filter="radar">Radar</button></div><button id="downloadAllCalendar" class="btn ghost small">＋ Calendario (.ics)</button></div>
+      <div class="wrap event-layout"><div id="eventList" class="event-list"></div><aside class="event-aside"><div class="radar-card"><span>📡</span><h3>Radar honesto</h3><p>“Confirmado” significa que fecha y recinto aparecen en la web oficial. “Anunciado” pide una última comprobación. “Radar” aún no tiene agenda cerrada.</p></div><div class="source-card"><b>Consejo de aventurero</b><p>Compra siempre desde la web oficial enlazada en cada ficha y revisa cambios de última hora.</p></div></aside></div>
+    </section>
+
+    <section id="view-rutas" class="view" data-view-panel="rutas">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> CAMPAÑAS DE UN DÍA</span><h1>Rutas listas para <em>jugar.</em></h1><p>Itinerarios temáticos con paradas reales y enlace directo a Maps.</p></div>
+      <div class="wrap route-grid" id="routeGrid"></div>
+      <section class="wrap route-builder">
+        <div><span class="kicker">CREA TU PARTY</span><h2>Mi ruta personalizada</h2><p>Añade lugares desde sus fichas. Ordena las paradas y abre el recorrido.</p></div>
+        <div id="customRoute" class="custom-route"></div>
+      </section>
+    </section>
+
+    <section id="view-stickers" class="view" data-view-panel="stickers">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> LABORATORIO DE STICKERS</span><h1>Comparte el <em>modo friki.</em></h1><p>Diseños originales creados para esta app. Descarga PNG/WebP o comparte el GIF en WhatsApp.</p></div>
+      <div class="wrap sticker-guide"><span>1</span><p><b>Elige</b> un diseño</p><i>→</i><span>2</span><p><b>Descarga</b> o comparte</p><i>→</i><span>3</span><p><b>En WhatsApp</b>, guárdalo como favorito</p></div>
+      <div class="wrap sticker-controls"><div class="segmented"><button class="active" data-sticker-mode="gif">GIF animado</button><button data-sticker-mode="png">PNG</button><button data-sticker-mode="webp">WebP</button></div><button id="downloadStickerPack" class="btn ghost small">↓ Descargar pack</button></div>
+      <div class="wrap sticker-grid" id="stickerGrid"></div>
+      <div class="wrap whatsapp-note"><span>💬</span><div><b>Cómo usarlo en WhatsApp</b><p>En móvil pulsa “Compartir” y elige WhatsApp. Para un sticker estático, descarga el WebP o PNG e impórtalo con la herramienta de creación de stickers de WhatsApp. Los GIF se envían como animación.</p></div></div>
+    </section>
+
+    <section id="view-favoritos" class="view" data-view-panel="favoritos">
+      <div class="page-hero compact wrap"><span class="eyebrow"><i></i> TU INVENTARIO</span><h1>Favoritos <em>guardados.</em></h1><p>Se conservan en este dispositivo, incluso sin conexión.</p></div>
+      <div class="wrap card-grid" id="favoritesGrid"></div>
+      <div class="wrap empty-state" id="favoritesEmpty"><span>♡</span><h3>Aún no hay tesoros</h3><p>Pulsa el corazón de una tienda, sitio o evento para guardarlo.</p><button class="btn primary" data-go="explorar">Explorar el mapa</button></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid"><div><a class="brand footer-brand" href="#inicio"><span class="brand-mark">F</span><span>FRIKI<span class="brand-accent">MADRID</span></span></a><p>Guía independiente y sin afiliación con las marcas o eventos listados.</p></div><div><b>Explora</b><button data-go="explorar">Tiendas y sitios</button><button data-go="eventos">Agenda</button><button data-go="rutas">Rutas</button></div><div><b>Utilidades</b><button data-go="stickers">Stickers</button><button id="footerInstall">Instalar app</button><button id="shareApp">Compartir app</button></div><div><b>Actualización</b><p>11 de noviembre de 2026</p><p>Horarios, precios y agendas pueden cambiar.</p></div></div>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Navegación móvil"><button data-view="inicio" class="active"><span>⌂</span>Inicio</button><button data-view="explorar"><span>⌕</span>Explorar</button><button data-view="eventos"><span>◇</span>Eventos</button><button data-view="rutas"><span>↝</span>Rutas</button><button data-view="stickers"><span>☺</span>Stickers</button></nav>
+
+  <dialog id="detailModal" class="detail-modal"><button class="modal-close" aria-label="Cerrar">×</button><div id="modalBody"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
